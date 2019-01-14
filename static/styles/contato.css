@@ -1,0 +1,21 @@
+.contatoimg{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+
+.contatostyling{
+    text-align: justify !important;
+    white-space: pre-line !important;
+    font-size: 1.3vw !important;   
+}
+.contatostyling th{
+    font-weight: normal !important; 
+}
+
+#contato{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}

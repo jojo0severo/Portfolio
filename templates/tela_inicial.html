@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/tela_inicial.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/experiencias.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/certificados_formacoes.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/linguagens.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/conhecimentos.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/contato.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/home.css">
+    <title>Portfolio João Severo</title>
+    <script src="../static/scripts/main.js"></script>
+</head>
+
+<body onload="open('home')">
+
+    <header>
+        <img src="../static/images/site/header3.png" alt="Linguagens de Programação" title="Engenharia de Software">
+    </header>
+
+    <div class="topnav" id="navbar">
+        <a class="active" href="javascript:open('home')">Home</a>
+        <a href="javascript:open('experiencias')">Experiências</a>
+        <a href="javascript:open('conhecimentos')">Conhecimentos</a>
+        <a href="javascript:open('realizacoes')">Realizações</a>
+        <a class="double last" href="javascript:open('certificados')">Certificados e
+            <br>Formação</a>
+        <a class="contact" href="javascript:open('contato')">Contato</a>
+        <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div id="container">
+        <div class="child" id="certificados">
+            <div class='main'>
+                <h1 class="certificadoh1">Título do Certificado/da Formação</h1>
+                <h3 class="certificadoh3">Texto explicativo sobre o certificado/ a formação</h3>
+                <img class="certificadoimg" src="../static/images/certificates/MicrosoftSoftwareDeveloperBadge.png" alt="MicrosoftSoftwareDeveloperBadge">
+                <p class="certificadop">Imagem da formação</p>
+
+
+                <h1 class="certificadoh1">Título do Certificado/da Formação</h1>
+                <h3 class="certificadoh3">Texto explicativo sobre o certificado/ a formação</h3>
+                <img class="certificadoimg" src="../static/images/certificates/MicrosoftSoftwareDeveloperBadge.png" alt="MicrosoftSoftwareDeveloperBadge">
+                <p class="certificadop">Imagem da formação</p>
+
+                <h1 class="certificadoh1">Título do Certificado/da Formação</h1>
+                <h3 class="certificadoh3">Texto explicativo sobre o certificado/ a formação</h3>
+                <img class="certificadoimg" src="../static/images/certificates/MicrosoftSoftwareDeveloperBadge.png" alt="MicrosoftSoftwareDeveloperBadge">
+                <p class="certificadop">Imagem da formação</p>
+
+                <h1 class="certificadoh1">Título do Certificado/da Formação</h1>
+                <h3 class="certificadoh3">Texto explicativo sobre o certificado/ a formação</h3>
+                <img class="certificadoimg" src="../static/images/certificates/MicrosoftSoftwareDeveloperBadge.png" alt="MicrosoftSoftwareDeveloperBadge">
+                <p class="certificadop">Imagem da formação</p>
+            </div>
+
+        </div>
+
+        <div class="child" id="home">
+            <div class="main">
+                <h1 class="homeh1">Olá, bem vindo ao Portfolio.</h1>
+                <pre class="homepre">
+
+                    <strong>A ideia por trás do portfolio...</strong>
+                    A proximidade que é percebida do entrevistador com um currículo pode ser considerada a de uma pessoa qualquer com uma parede, não é levado em consideração quem a pessoa é ou como ela é, apenas o que é exibido dentro de 2 a 3 páginas identadas com letras bonitas para mostrar que dominamos bem o português.
+                    
+                    Para evitar essa distância pensei em fazer este site/portfolio que possui todos conteúdos presentes em meu currículo, mas com a vantagem de conseguir expressar quem sou e o que penso de forma mais livre, sem usar receitas ou correções, tornando a relação entrevistador-entrevistado mais humana.
+
+                    Pensando nessa proximidade que eu gostaria de ter com o entrevistador, o modelo desenhado para este site é simples e equilibrado, balanceando a capacidade que terei de mostrar meu trabalho e minhas habilidades sem criar algo super carregado de efeitos e estilos mostrando que sei e afastando o entrevistador. Então vamos sentar juntos com nossos cafés e conversar, onde cada pergunta que fizer vai ser através de um clique e minhas repostas serão as exibições na tela.
+                    
+                    <hr>
+                    <strong>Quem é João Severo...</strong>
+                    Bom, sou um cara criativo que gosta de brincar de programador, construindo desde aplicações para uso próprio ou melhorias que me ajudem a crescer na carreira até a sistemas com certa complexidade. Um case de um sistema complexo em que o cliente foi um membro da minha própria família é o sistema de uma <spam style="cursor: pointer;"><u>Mercearia</u></spam>, o cliente queria controlar o seu lucro e seus gastos ao fim do mês de modo a não ter que rever todas as suas anotações feitas durante o mês para fazer um somatório, calcular o lucro, verificar a conta... Chega, muita coisa! Para automatizar foi feito um sistema que recebe os gastos diários do cliente e salva em um banco de dados, no fim do mês basta verificar o lucro, gasto total e ganho total num clique!
+                    
+                    Esse tipo de construção me atrai muito e me diverte, mas sou um cara variado... (hehe) Um dos meus hobbies se tornou o estudo de Data Science, pois quando me tornei sabido da existência desse campo foi tiro e queda. Me apaixonei pela área e sempre tento implementar um certo nível de Business Intelligence ou Inteligência Artificial nas minhas aplicações, seja uma visão macro sobre valores dando uma visão que o empreendedor necessita para realizar alguma decisão, seja construindo uma pequena aplicação para uso próprio em que faço o <spam style="cursor: pointer;"><u>Mário encontrar a Princesa Peach</u></spam> xD.
+                    
+                    <hr>
+                    <strong>Onde achar o conteúdo...</strong>
+                    O site foi organizado da forma mais simples e intuitiva possível para garantir a facilidade de chegar nas informações sem ter que ler um texto enorme como esse.
+
+                    Por via das dúvidas...
+                    <ul class="lista_hierarquia">
+
+                        <li>A aba Home possui apenas uma apresentação sobre o portfolio e o programador que a desenvolveu (Eu), para introduzir o entrevistador ao projeto e dar a proximidade entrevistador-entrevistado que era desejada.</li>
+
+                        <li>Na página Experiências vai ser encontrado todas as experiencias <u>profissionais</u> do programador, ou seja, carteira assinada, bater ponto e tudo.</li>
+
+                        <li>Em Conhecimentos são mostrados todos os conhecimentos considerados relevantes dentro de qualquer área que eu tenha estudado, desde Data Science até aplicações Android.</li>
+
+                        <li>Os projetos desenvolvidos para interesse pessoal ou profissional estão na aba Realizações que é um resumo dos projetos que considero mais importantes ou que tenha me divertido mais fazendo, até porque não tem como fazer algo todo dia se não é algo que se goste xD.</li>
+
+                        <li>A aba Certificados e Formação irá conter todos os certificados adiquiridos realizando cursos e/ou provas assim como a minha formação educacional que inclui o ensino fundamental e superior.</li>
+                    </ul>
+                </pre>
+            </div>
+        </div>
+
+        <div class="child" id="linguagens">
+            <div class="python-text">
+                <h1 class="linguagensh1">Python</h1>
+
+                <h3 class="linguagensh3">
+                    Texto sobre Python
+                </h3>
+
+                <h1 class="linguagensh1">Java</h1>
+
+                <h3 class="linguagensh3">
+                    Texto sobre Java
+                </h3>
+
+                <h1 class="linguagensh1">Javascript</h1>
+
+                <h3 class="linguagensh3">
+                    Texto sobre Javascript
+                </h3>
+
+                <h1 class="linguagensh1">SQL</h1>
+
+                <h3 class="linguagensh3">
+                    Texto sobre SQL
+                </h3>
+            </div>
+        </div>
+
+        <div class="child" id="conhecimentos">
+            <div id="linguagensnavbar" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Python</a>
+                <a href="#">Java</a>
+                <a href="#">Javascript</a>
+                <a href="#">R</a>
+                <a href="#">SQL</a>
+            </div>
+            <div id="datasciencenavbar" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <pre class="conhecimentosnavpre">&nbsp; Linguagens</pre>
+                <a href="#">Python</a>
+                <a href="#">R</a>
+                <pre class="conhecimentosnavpre">&nbsp; Bibliotecas</pre>
+                <a href="#">Matploblib</a>
+                <a href="#">Scikit-Learn</a>
+                <a href="#">Pandas</a>
+                <a href="#">Regex</a>
+                <pre class="conhecimentosnavpre">&nbsp; Ferramentas</pre>
+                <a href="#">Power BI</a>
+                <pre class="conhecimentosnavpre">&nbsp; Teorias</pre>
+                <a href="#">Inteligência Artificial</a>
+                <a href="#">Machine Learning</a>
+            </div>
+            <div id="webnavbar" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <pre class="conhecimentosnavpre">&nbsp; Linguagens</pre>
+                <a href="#">Javascript</a>
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <pre class="conhecimentosnavpre">&nbsp; Frameworks</pre>
+                <a href="#">Flask</a>
+                <a href="#">Django</a>
+                <pre class="conhecimentosnavpre">&nbsp; Servidor</pre>
+                <a href="#">Heroku</a>
+                <a href="#">Azure</a>
+            </div>
+            <div id="linguasnavbar" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Inglês</a>
+                <a href="#">Espanhol</a>
+                <a href="#">Português</a>
+            </div>
+
+            <div id="metodologiasnavbar" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Scrum</a>
+                <a href="#">Kanban</a>
+            </div>
+
+            <div id="diversosnavbar" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <pre class="conhecimentosnavpre">&nbsp; Linguagens</pre>
+                <a href="#">Android</a>
+                <a href="#">C/C++</a>
+                <pre class="conhecimentosnavpre">&nbsp; Sistemas Operacionais</pre>
+                <a href="#">Linux</a>
+                <a href="#">Windows</a>
+                <pre class="conhecimentosnavpre">&nbsp; Bancos de Dados</pre>
+                <a href="#">MongoDB</a>
+                <a href="#">SQLite</a>
+                <pre class="conhecimentosnavpre">&nbsp; Outros</pre>
+                <a href="#">Docker</a>
+                <a href="#">Office 365</a>
+            </div>
+
+
+            <div id="mainconhecimentos">
+                <div>
+                    <h1 class="conhecimentosh1">Linguagens de programação</h1>
+                    <pre class="ph1">Já trabalhei com algumas linguagens de programação que me interessaram muito como Java, Python, C/C++,etc. Tenho bom conhecimento para trabalhar com elas de forma que seja possível entrar em um time não me sentir totalmente perdido. A linguagem que mais tenho conhecimento e paixão atualmente é Python, porém sempre mantenho olho aberto sobre outras para não perder o costume do estudo e não cair numa zona de conforto, caso tenha curiosidade para saber mais sobre meus conhecimentos em linguagens de programação, pode clicar aqui: <span onclick="openNav('linguagensnavbar')"><strong>Ver Linguagens</strong></span>
+                    </pre>
+                </div>
+                <div>
+                    <h1 class="conhecimentosh1">Data Science</h1>
+                    <pre class="ph1">Ah, Data Science... Uma área que amo demais desde a construção de modelos preditivos até a análise de dados (principalmente a análise de dados por sinal). Me interessei pelo campo como todo jovem que joga video games "Quero fazer uma inteligência aritificial que ganhe pra mim!" (ou apenas os jovens que não jogam tão bem :c). Comecei estudando o uso de modelos que implementam algoritmos de Machine Learning para verificar spams de e-mail, adivinhar qual o tipo de flor que seria inserida, enfim, várias aplicaçõesinhas de aprendizado e com isso fui me interessando mais para buscar sobre como eram construídos os modelos e como eram tratados os dados que deveriam ser utilizados e com isso fui apresentado a algumas bibliotecas famosas para programadores Python que desejam trabalhar com Data Science como Pandas, Scikit-learn, WordCloud, etc. Assim como me levou a conhecer e estudar a linguagem R. Se quiser saber mais sobre meus conhecimentos em Data Science pode clicar aqui:  <span onclick="openNav('datasciencenavbar')"><strong>Ver Data Science</strong></span>
+                    </pre>
+                </div>
+                <div>
+                    <h1 class="conhecimentosh1">Desenvolvimento Web</h1>
+                    <pre class="ph1">Bom, acho que não preciso falar muito sobre HTML/CSS já que esse site inteiro foi feito praticamente só com esses dois componentes, um pouco de Javascript, uma pitada de Python e Flask e servido num belo Heroku. Brincadeiras a parte, o desenvolvimento web é algo que me interessa bastante pela forma com que se torna fácil a transmissão de informação entre as pessoas e a forma com que essa informação vai ser transmitida, o que quero dizer com isso é que a internet disponibiliza algo sensacional que gosto de contribuir de certa maneira. Além desses componentes mencionados, sabemos que um site não se sustenta apenas com isso e para complementar tenho conhecimentos com banco de dados relacionais também, e se não acredita em mim olha aí: <span onclick="openNav('webnavbar')"><strong>Ver Desenvolvimento Web</strong></span>
+                    </pre>
+                </div>
+                <div>
+                    <h1 class="conhecimentosh1">Línguas</h1>
+                    <pre class="ph1">Um tema muito importante para quem deseja estudar programação e trabalhar com isso é o conhecimento de uma língua extrangeira e, preferencialmente, o inglês. Como o conhecimento do inglês sempre foi uma preocupação minha desde cedo estou muito preparado para falar, ler e escrever em inglês de modo que poderei responder quaisquer perguntas que me fizer xD. Fiz alguns cursos ao longo da vida e um intercâmbio com foco no estudo da língua ingles. Infelizmente o português e o inglês são minhas línguas principais e o espanho coitado é bem básico, porém por aulas e pela proximidade com o português acredito que consigo me virar para trabalhar com ele. Se quiser ver mais detalhes: <span onclick="openNav('linguasnavbar')"><strong>Ver Línguas</strong></span>
+                    </pre>
+                </div>
+                <div>
+                    <h1 class="conhecimentosh1">Metodologias</h1>
+                    <pre class="ph1">Como todo iniciante na programação eu pensava que o processo de desenvolvimento de software se representava por ficar atrás do computador escrevendo códigos e mais códigos... Só que não. Estudei algumas metodologias que me fizeram refletir sobre o processo de desenvolvimento até o produto final me fazendo focar mais em duas metodologias ágeis: Scrum e Kanban. Essas duas metodologias me atraíram mais e inclusive já trabalhei com Scrum. Se quiser saber um pouco mais sobre minha relação com metodologias: <span onclick="openNav('metodologiasnavbar')"><strong>Ver Metodologias</strong></span>
+                    </pre>
+                </div>
+                <div>
+                    <h1 class="conhecimentosh1">Outros Conhecimentos</h1>
+                    <pre class="ph1">As vezes não conseguimos agrupar conhecimentos em uma categoria, nesse caso ficam de fora, mas não quer dizer que não são importantes, alguns muito relevantes. Dê uma olhada: <span onclick="openNav('diversosnavbar')"><strong>diversos</strong></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="child" id="experiencias">
+            <div class="exp-text">
+                <h1 class="exph1">Freelancer/
+                    <strong>Desenvolvedor</strong>
+                </h1>
+                <h5 class="exph5">Dezembro de 2018 à Abril de 2019</h5>
+                <pre class="exph3">Ofereci um sistema para o cliente que pensei que fosse ser de grande ajuda. O cliente utilizava cadernos para realizar o controle de todos os gastos e ganhos dentro de sua empresa, causando problemas de perdas e descontrole do que era vendido e comprado. Sendo assim criei um sistema de gerenciamento que se alimenta dos consumos diários e gerá um relatório mensal de lucro obtido, facilitando a visualização do andar da empresa e ajudando na tomada de decisões do patrão.</pre>
+
+                <h1 class="exph1">Cloud2Go/
+                    <strong>Desenvolvedor</strong>
+                </h1>
+                <h5 class="exph5">Setembro de 2018 à Fevereiro de 2019</h5>
+                <pre class="exph3">Fui um dos primeiros desenvolvedores do time e dentro da Cloud2Go trabalhei com a customização de ferramentas e automação de processos demorados que tinham começado a exigir uma demanda maior do que era possível suprir manualmente. Para completar estas tarefas utilizei Python dentro de pequenas automações na geração e processamento de relatórios de clientes, usei C# e Javascript para a criação de protótipos para apresentação em workshops e utilizei a ferramenta de Business Intelligence, da Microsoft, Power BI para a geração de relatórios de consumo para clientes como a empresa Dufrio. 
+                        Além das customizações e gerenciamento e criação de relatórios desenvolvi o sistema de registro utilizado pela PUCRS para assinar documentos dentro do ambiente do Sharepoint Online.
+                </pre>
+
+                <h1 class="exph1">AGES/
+                    <strong>Desenvolvedor</strong>
+                </h1>
+                <h5 class="exph5">Julho de 2018 à Novembro de 2018</h5>
+                <pre class="exph3">Trabalhei na criação de um simulador de desastres naturais focado em inundações para auxiliar na pesquisa de cientistas ao redor do mundo. Fiquei encarregado de construir a API e auxiliar o grupo na construção do core da aplicação agindo em conjunto com o gerente do projeto. Um dos projetos em equipe que participei que mais senti a sinergia dos integrantes, embora tivemos uma falha ou outra, conseguimos entregar um produto ao cliente.</pre>
+
+                <h1 class="exph1">AGES/
+                    <strong>Desenvolvedor</strong>
+                </h1>
+                <h5 class="exph5">Julho de 2017 à Novembro de 2017</h5>
+                <pre class="exph3">Trabalhei no desenvolvimento do aplicativo Nutritech, o qual foi requisitado por um cliente que necessitava uma aplicação para aumentar a praticidade do cadastramento de receitas para as suas aulas na faculdade. Meu foco dentro do projeto foi voltado para a construção do aplicativo mobile que deveria ter as mesmas funções implementadas na interface web do projeto. A partir deste projeto eu comecei a brincar cada vez mais com Android e construir aplicações para uso pessoal que eu penso que me ajudam a solucionar alguns problemas como o controle dos meus gastos (ótimo para evitar surpresas hehe)</pre>
+
+
+            </div>
+        </div>
+
+        <div class="child" id="realizacoes">
+            <p class="realizacoesp">
+                Terá algo aqui Realizacoes
+            </p>
+        </div>
+
+
+        <div class="child" id="contato">
+            <pre class="contatostyling">
+            Espero que tenha gostado do meu site, caso queira sugerir melhorias ou falar comigo por favor utilize algum dos meios abaixo
+    
+    
+    
+            Informações para contato:
+            </pre>
+            <table class="contatostyling">
+                <tr>
+                    <th>
+                        <img class="contatoimg" src="../static/images//icons/WhatsAppIcone.png">
+                    </th>
+                    <th>
+                        Celular: (51) 99455-6722
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img class="contatoimg" src="../static/images//icons/GmailIcon.png">
+                    </th>
+                    <th>
+                        E-mail:
+                        <a style="color: rgba(70, 70, 70, 0.815);" href="mailto:joaovbsevero@gmail.com">joaovbsevero@gmail.com</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img class="contatoimg" src="../static/images//icons/LinkedinIcon.png">
+                    </th>
+                    <th>
+                        Linkedin:
+                        <a class="contatoa" style="color: rgba(70, 70, 70, 0.815);" target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-vitor-severo-a2b5aa165/">Linkedin João Severo</a>
+                    </th>
+
+                </tr>
+                <tr>
+                    <th>
+                        <img class="contatoimg" src="../static/images//icons/FacebookIcone.png">
+                    </th>
+                    <th>
+                        Facebook:
+                        <a style="color: rgba(70, 70, 70, 0.815);" target="_blank" href="https://www.facebook.com/joaovitor.bernardisevero">Facebook João Severo</a>
+                    </th>
+
+                </tr>
+            </table>
+
+            <pre class="contatostyling">
+
+
+
+                Caso queira ver todos os projetos que participei e criei:
+
+            </pre>
+            <table class="contatostyling">
+                <tr>
+                    <th>
+                        <img class="contatoimg" src="../static'/images//icons/GitHubIcone.png">
+                    </th>
+                    <th>
+                        GitHub:
+                        <a style="color: rgba(70, 70, 70, 0.815);" target="_blank" href="https://github.com/jojo0severo">GitHub João Severo</a>
+                    </th>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>Criado por: João Vitor Severo.
+            <br>Email para contato:
+            <a style="color: rgba(255, 255, 255, 0.815);" href="mailto:joaovbsevero@gmail.com">joaovbsevero@gmail.com</a>.
+        </p>
+    </footer>
+</body>
+
+</html>

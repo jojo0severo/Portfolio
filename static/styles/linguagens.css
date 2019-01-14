@@ -1,0 +1,21 @@
+#linguagens {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    text-align: center;
+    margin: 0 auto; 
+    width: 57vw;
+    margin-top: 75px;
+}
+
+.linguagensh3 {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #000000;
+}
+
+.linguagensh1, .linguagensh3 {
+    margin-top: 25px;
+}
+
+
+.linguagensh1, .linguagensh3 {
+    font-weight: normal;
+}
