@@ -1,6 +1,13 @@
 
 // Show the selected screen
-function show(selected_screen_id) {
+function show(selected_screen_id, is_loading) {
+    if (is_loading){
+        setTimeout(_=>{
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }, 20);
+    }
+
     let children = document.getElementsByClassName('child');
     let shown_screen = ''
     let selected_screen = ''
