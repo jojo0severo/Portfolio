@@ -1,0 +1,32 @@
+  .menu_child {
+    display: none;
+  }
+
+  .sticky{
+    width: 100%;
+    padding: 35px;
+    font-size: 16px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+
+  .sticky:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .sticky_top {
+    position: fixed;
+    top: 0;
+    left: 0px;
+  }
+  
+  .sticky_bottom{
+      position: fixed;
+      bottom: 0;
+      left: 0px;
+  }

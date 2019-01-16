@@ -1,0 +1,35 @@
+.main_certificates {
+    height: 100%;
+    font-weight: normal;
+}
+
+.certificates_child{
+    margin: auto;
+    width: 57vw;
+    padding: 50px;
+    padding-top: 45px;
+    padding-bottom: 41px;
+    border-bottom: 1px solid black;
+}
+
+.certificates_first{
+    padding-top: 50px;    
+}
+
+.certificates_h1 {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.certificates_pre {
+    font-size: 20px;
+}
+
+.certificates_img {
+    max-width: 300px;
+    padding-left: 25%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 25%;
+}
