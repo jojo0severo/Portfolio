@@ -1,0 +1,26 @@
+.main_contact{
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.contact_img{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.contact_styling {
+    text-align: justify;
+    white-space: pre-line;
+    font-size: 26px;   
+}
+
+.contact_styling th{
+    font-weight: normal; 
+}
+
+
+.reference_address{
+    color: rgba(70, 70, 70, 0.815);
+}

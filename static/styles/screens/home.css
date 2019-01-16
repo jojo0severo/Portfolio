@@ -1,0 +1,18 @@
+  .main_home{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: auto;
+    padding-top: 48px;
+    width: 57vw;
+  }
+
+  .home_h1 {
+    font-size: 30px;
+  }
+
+  .hierarchy_list{
+    list-style: disc outside;
+    margin-right: 25px;
+    margin-top: 0;
+  }
+
