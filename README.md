@@ -1,2 +1,2 @@
-# Portifolio
-Portifólio de desenvolvedor contendo todas as informações relevantes e realizações do mesmo
+# Portfolio
+Portfólio de desenvolvedor contendo todas as informações relevantes e realizações do mesmo
