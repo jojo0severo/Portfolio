@@ -24,17 +24,3 @@
   .knowledges_pre{
     font-size: 20px;
   }
-  
-  @media screen and (max-width: 700px) {
-    .main_knowledges span {
-      font-size: 15px;
-    }
-
-    .knowledges_h1 {
-      font-size: 20px ;
-    }
-
-    .knowledges_pre{
-      font-size: 15px;
-    }
-  }

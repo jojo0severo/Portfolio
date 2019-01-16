@@ -34,7 +34,7 @@
     <title>Portfolio João Severo</title>
 </head>
 
-<body onload="show('home')">
+<body onload="show('home', true)">
 
     <header>
         <img src="../static/images/site/header.png" alt="Linguagens de Programação">
@@ -149,7 +149,7 @@
                     <a href="javascript:open_item('pandas', 'datascience')">Pandas</a>
                     <a href="javascript:open_item('regex', 'datascience')">Regex</a>
                     <pre class="knowledges_nav_pre">&nbsp; Ferramentas</pre>
-                    <a href="javascript:open_item('power_bi', 'datascience')">Power BI</a>
+                    <a href="javascript:open_item('powerbi', 'datascience')">Power BI</a>
                     <pre class="knowledges_nav_pre">&nbsp; Teorias</pre>
                     <a href="javascript:open_item('ai', 'datascience')">Inteligência Artificial</a>
                     <a href="javascript:open_item('machine_learning', 'datascience')">Machine Learning</a>
@@ -236,7 +236,7 @@
             <div class="child" id="works">
                 <div class="main_works">
                     <pre class="works_pre">
-                    Terá algo aqui Realizacoes
+                    Terá algo tenso de fazer aqui Realizacoes
                 </pre>
                 </div>
             </div>
@@ -361,72 +361,35 @@
         </div>
 
         <div id="menu_knowledges">
-            <button class="sticky menu_child" id="back_button" onclick="close_menu()">VOLTAR NESSA PORRA</button>
+            <button class="sticky menu_child" id="back_button" onclick="close_menu(true)">VOLTAR NESSA PORRA</button>
 
             <div class="main_languages" id="languages">
                 <div class="main_python menu_child">
                     <h1 class="languages_h1">Python</h1>
-                    <h3 class="languages_h3">
+                    <pre class="languages_pre">
                         Texto sobre Python
-                    </h3>
-                    <h3 class="languages_h3">
-                        Texto sobre Python
-                    </h3>
-                    <h3 class="languages_h3">
-                        Texto sobre Python
-                    </h3>
-                    <h3 class="languages_h3">
-                        Texto sobre Python
-                    </h3>
-                    <h3 class="languages_h3">
-                        Texto sobre Python
-                    </h3>
-                    <h3 class="languages_h3">
-                        Texto sobre Python
-                    </h3>
-                    <h3 class="languages_h3">
-                        Texto sobre Python
-                    </h3>
-                    <h3 class="languages_h3">
-                        Texto sobre Python
-                    </h3>
-                    <h3 class="languages_h3">
-                        Texto sobre Python
-                    </h3>
-                    <h3 class="languages_h3">
-                        Texto sobre Python
-                    </h3>
-                    <h3 class="languages_h3">
-                        Texto sobre Python
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_java menu_child">
                     <h1 class="languages_h1">Java</h1>
-                    <h3 class="languages_h3">
+                    <pre class="languages_pre">
                         Texto sobre Java
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_javascript menu_child">
                     <h1 class="languages_h1">Javascript</h1>
-                    <h3 class="languages_h3">
+                    <pre class="languages_pre">
                         Texto sobre Javascript
-                    </h3>
-                </div>
-
-                <div class="main_r menu_child">
-                    <h1 class="languages_h1">R</h1>
-                    <h3 class="languages_h3">
-                        Texto sobre R
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_sql menu_child">
                     <h1 class="languages_h1">SQL</h1>
-                    <h3 class="languages_h3">
+                    <pre class="languages_pre">
                         Texto sobre SQL
-                    </h3>
+                    </pre>
                 </div>
             </div>
 
@@ -435,65 +398,65 @@
             <div class="main_datascience" id="datascience">
                 <div class="main_python menu_child">
                     <h1 class="datascience_h1">Python</h1>
-                    <h3 class="datascience_h3">
-                        Texto sobre Python
-                    </h3>
+                    <pre class="datascience_pre">
+                        Python dentro da área de Data Science tem me mostrado ser uma linguagem incrível com um potencial de crescimento enorme. Sempre que começo a estudar sobre o assunto e vejo uma biblioteca nova, um framework novo, códigos refatorados pensando no desenvolvedor... Me lembra que a comunidade por trás do Python ainda está quente e parece que vai estar por um bom tempo! <br><br>Foco... Dentro da área de Data Science com Python eu gosto de trabalhar com a biblioteca Pandas para fazer um pré-processamento de dados de forma que seja fácil e rápido o seu tratamento em conjunto com a biblioteca de expressões regulares Regex. Quando o assunto vira uso de Machine Learning ou Inteligência Artificial, possuo conhecimento com as bibliotecas Scikit-Learn para o uso de diferentes modelos. Como o usuário não se importa muito com a quantidade ou como é feito o código sempre é preciso ter algum tipo de exibição e para isso costumo usar a biblioteca Matplotlib que é extremamente útil na hora de exibir gráficos e resultados para o usuário.
+                    </pre>
                 </div>
 
                 <div class="main_r menu_child">
                     <h1 class="datascience_h1">R</h1>
-                    <h3 class="datascience_h3">
-                        Texto sobre R
-                    </h3>
+                    <pre class="datascience_pre">
+                        Conheci o R através do estudo de Data Science e apesar de possuir pouco conhecimento em cima da linguagem se comparado com meu conhecimento em Python, consigo entender a sintaxe da linguagem de modo a poder trabalhar com ela. Além de tudo, amo as otimizações matemáticas feitas na linguagem e que me fazem ter vontade e curiosidade de aprender e utilizá-la mais.
+                    </pre>
                 </div>
 
                 <div class="main_matplotlib menu_child">
                     <h1 class="datascience_h1">Matploblib</h1>
-                    <h3 class="datascience_h3">
-                        Texto sobre Matploblib
-                    </h3>
+                    <pre class="datascience_pre">
+                        Uma biblioteca de extrema importância para aplicações que exijam a exibição de dados para o usuário e que disponibiliza uma gama de possibilidades muito grandes. Digo que possui tantas possibilidades, pois em um projeto que trabalhei para o desenvolvimento de uma aplicação que criasse relatórios mensais para o cliente, os desenvolvedores desta biblioteca criaram uma integração com outra biblioteca visual do Python a PyQt (famosa, mas para outro segmento) permitindo uma integração nativa entre as duas de forma muito simples. Utilizo principalmente o módulo Pyplot para exibir informações úteis ao usuário, mas extendo meu conhecimento por toda a biblioteca.
+                    </pre>
                 </div>
 
                 <div class="main_scikit menu_child">
                     <h1 class="datascience_h1">Scikit-Learn</h1>
-                    <h3 class="datascience_h3">
-                        Texto sobre Scikit
-                    </h3>
+                    <pre class="datascience_pre">
+                        Ah, Schikit-Learn... Maravilhosa biblioteca para o uso de modelos de Machine Learning que são extremamente otimizados e possuem um ótimo desempenho. Dentro dos diversos modelos disponíveis já trabalhei diretamente com NaiveBayes and AdaBoost.
+                    </pre>
                 </div>
 
                 <div class="main_pandas menu_child">
                     <h1 class="datascience_h1">Pandas</h1>
-                    <h3 class="datascience_h3">
-                        Texto sobre Pandas
-                    </h3>
+                    <pre class="datascience_pre">
+                        Adoro esta biblioteca pela simplicidade que ela traz no tratamento de dados. Utilizei ela no trabalho dentro da Cloud2Go para a formatação de dados em .CSV e . XLSX que precisavam ser enviados para o cliente com cálculos de coluna e omissão de informações sensíveis de forma que o cliente deveria receber apenas e unicamente o necessário para realizar seu trabalho.
+                    </pre>
                 </div>
 
                 <div class="main_regex menu_child">
                     <h1 class="datascience_h1">Expressões Regulares (Regex)</h1>
-                    <h3 class="datascience_h3">
-                        Texto sobre Regex
-                    </h3>
+                    <pre class="datascience_pre">
+                        Comecei a estudar expressões regulares no momento em que comecei a trabalhar com análise e tratamento de dados. Não vejo uma possibilidade em que sejam utilizados grandes volumes de dados para realizar o processamento de alguma operação sem que o uso de Regex apareça. Estudei extensivamente a sintaxe de forma que tenho um pleno conhecimento de como utilizá-lo para os mais variados fins. <br><br>Eu gosto de desafios de programação e conheci um site chamado Hackerank, dentro do site descobri a categoria de Regex e completei todos os exercícios referentes à ela.
+                    </pre>
                 </div>
 
                 <div class="main_powerbi menu_child">
                     <h1 class="datascience_h1">Power BI</h1>
-                    <h3 class="datascience_h3">
-                        Texto sobre Power BI
-                    </h3>
+                    <pre class="datascience_pre">
+                        A ferramenta da Microsoft que possui um grande destaque e valor de mercado no mundo atual. Conheci o Power BI durante a minha estadia na Cloud2Go na criação, edição e atualização de relatórios que deveriam ser entregues a clientes mensalmente. Incluive participei de um workshop de 6 aulas ministradas pelo meu chefe que tratava desde a organização da área de negócios que utilizava o Power BI até a área de desenvolvedores que utilizarias expressões DEX para criar medidas customizadas e ampliar a quantidade de dados utilizáveis.
+                    </pre>
                 </div>
 
                 <div class="main_ai menu_child">
                     <h1 class="datascience_h1">Inteligência Artificial</h1>
-                    <h3 class="datascience_h3">
-                        Texto sobre Inteligência Artificial
-                    </h3>
+                    <pre class="datascience_pre">
+                        Inteligência Artificial se tornou uma das áreas de conhecimento mais interessantes na minha visão desde que comecei a programar e entender mais sobre como o software funciona e o porque de quandoe u clico no botão uma luz pisca. Me interessei a ponto de realizar alguns cursos na Udemy e obter certificações para mergulhar mais e mais dentro de Inteligência Artificial e como minha linguagem favorita atualmente é Python, pude juntar os dois e começar a brincar. Criei uma Inteligência Artificial extremamente simples que buscava pela Peach dentro de um labirinto. Embora pequeno meu conhecimento, tenho muita vontade de desbravar e aprender cada vez mais sobre.
+                    </pre>
                 </div>
 
                 <div class="main_machine_learning menu_child">
                     <h1 class="datascience_h1">Machine Learning</h1>
-                    <h3 class="datascience_h3">
-                        Texto sobre Machine Learning
-                    </h3>
+                    <pre class="datascience_pre">
+                        O ramo de Inteligência Artificial, o Aprendizado de Máquina, é um dos mais relevantes e mais interessantes para todos que estudam IA. É muito legal programar diversas ocasiões que o usuário pode causar e prever a maioria delas de forma concisa, sem repostas neutras, mas isso também requer muito trabalho e muito tempo gasto de forma não tão produtiva (para não falar inútil). O campo de Machine Learning chega para exterminar os humanos... Não, pera... É a área que me rouba mais tempo de aprendizado quando leio ou estudo sobre IA, pois é a mais interessante e mais inovadora de todas. Com meus cursos sobre Machine Learning fui capaz de treinar alguns modelos que prediziam um spam nos meus e-mails quase sempre (nada é perfeito), outro modelo que poderia me dizer a espécie de flor se eu informasse o tamanho do caule e da folha, outro que verificava alguns tweets (conectado com a API do Twitter) e previa se prevaleciam sentimentos de felicidade ou raiva... Enfim, já trabalhei com modelos de Machine Learning e possuo certo conhecimento nas ferramentas.
+                    </pre>
                 </div>
             </div>
 
@@ -502,51 +465,51 @@
             <div class="main_web" id="web">
                 <div class="main_javascript menu_child">
                     <h1 class="web_h1">Javascript</h1>
-                    <h3 class="web_h3">
+                    <pre class="web_pre">
                         Texto sobre Javascript
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_html menu_child">
                     <h1 class="web_h1">HTML</h1>
-                    <h3 class="web_h3">
+                    <pre class="web_pre">
                         Texto sobre HTML
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_css menu_child">
                     <h1 class="web_h1">CSS</h1>
-                    <h3 class="web_h3">
+                    <pre class="web_pre">
                         Texto sobre CSS
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_flask menu_child">
                     <h1 class="web_h1">Flask</h1>
-                    <h3 class="web_h3">
+                    <pre class="web_pre">
                         Texto sobre Flask
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_azure menu_child">
                     <h1 class="web_h1">Azure</h1>
-                    <h3 class="web_h3">
+                    <pre class="web_pre">
                         Texto sobre Azure
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_django menu_child">
                     <h1 class="web_h1">Django</h1>
-                    <h3 class="web_h3">
+                    <pre class="web_pre">
                         Texto sobre Django
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_heroku menu_child">
                     <h1 class="web_h1">Heroku</h1>
-                    <h3 class="web_h3">
+                    <pre class="web_pre">
                         Texto sobre Heroku
-                    </h3>
+                    </pre>
                 </div>
             </div>
 
@@ -555,23 +518,23 @@
             <div class="main_speech" id="speech">
                 <div class="main_english menu_child">
                     <h1 class="speech_h1">Inglês</h1>
-                    <h3 class="speech_h3">
-                        Texto sobre Inglês
-                    </h3>
+                    <pre class="speech_pre">
+                        A língua inglesa é indispensável para um programador considerando que a maioria das documentações são em inglês e com poucas traduções. Com essa necessidade eu tento sempre praticar o inglês que venho estudando desde pequeno para não perder a prática e sempre aumentar o vocabulário para momentos em que seja necessário um vocabulário mais técnico ou ler um meme do 9GAG. <br><br>Como disse, estudo inglês desde pequeno e não é exagero, desde os 12 anos eu frequento algum curso de inglês, comecei tendo aulas com professores "particulares" (por que as aspas? Bom, eram professores que davam aulas para pequenas turmas, mas fora de uma instituição) e aos 15 anos entrei no CCAA no nível 2 onde terminei meus estudos até o nível pós-avançado. Fiz um intercâmbio linguístico para londres em 2017 e fiquei como estudante da Newbold College.<br><br>Em experiências profissionais com a língua inglesa, eu realizei um projeto na AGES em que um dos requisitos era que o projeto deveria ser em inglês, pois seria disponibilizado para pesquisadores de todo o mundo, desde a documentação até a construção do projeto.
+                    </pre>
                 </div>
 
                 <div class="main_spanish menu_child">
                     <h1 class="speech_h1">Espanhol</h1>
-                    <h3 class="speech_h3">
-                        Texto sobre Espanhol
-                    </h3>
+                    <pre class="speech_pre">
+                        O espanhol é a língua que todos achamos que sabemos falar, mas no fundo acabamos no portunhol. O meu caso chega no nível de um espanhol mesmo, é uma língua interessante que estudei e tenho um conhecimento básico para conseguir entender o necessário e me virar com o que não souber.
+                    </pre>
                 </div>
 
                 <div class="main_portuguese menu_child">
                     <h1 class="speech_h1">Português</h1>
-                    <h3 class="speech_h3">
-                        Texto sobre Português
-                    </h3>
+                    <pre class="speech_pre">
+                        Português é uma das línguas mais difíceis no mundo devido as variâncias e pontuações e porque, porquê, por que, por quê, sério, por que tantos porquês? Voltando... Minha primeira língua e que sempre vou utilizar e estudar para não fazer feio na redação. Brincadeiras à parte, tenho certa facilidade para a escrita e semrpe tive disposição para escrever (maioria das vezes no computador), isso me fez uma ótima pessoa para documentar e comentar código de tal forma que certa vez fiz meu professor que programava majoritariamente em C e Assembly entender um código em Java.
+                    </pre>
                 </div>
             </div>
 
@@ -580,16 +543,16 @@
             <div class="main_methodologies" id="methodologies">
                 <div class="main_scrum menu_child">
                     <h1 class="methodologies_h1">Scrum</h1>
-                    <h3 class="speech_h3">
+                    <pre class="speech_pre">
                         Texto sobre Scrum
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_kanban menu_child">
                     <h1 class="methodologies_h1">Kanban</h1>
-                    <h3 class="speech_h3">
+                    <pre class="speech_pre">
                         Texto sobre Kanban
-                    </h3>
+                    </pre>
                 </div>
             </div>
 
@@ -598,65 +561,65 @@
             <div class="main_others" id="others">
                 <div class="main_android menu_child">
                     <h1 class="others_h1">Android</h1>
-                    <h3 class="others_h3">
+                    <pre class="others_pre">
                         Texto sobre Android
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_c/c++ menu_child">
                     <h1 class="others_h1">C/C++</h1>
-                    <h3 class="others_h3">
+                    <pre class="others_pre">
                         Texto sobre C/C++
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_linux menu_child">
                     <h1 class="others_h1">Linux</h1>
-                    <h3 class="others_h3">
+                    <pre class="others_pre">
                         Texto sobre Linux
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_windows menu_child">
                     <h1 class="others_h1">Windows</h1>
-                    <h3 class="others_h3">
+                    <pre class="others_pre">
                         Texto sobre Windows
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_mongo menu_child">
                     <h1 class="others_h1">MongoDB</h1>
-                    <h3 class="others_h3">
+                    <pre class="others_pre">
                         Texto sobre MongoDB
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_sqlite menu_child">
                     <h1 class="others_h1">SQLite</h1>
-                    <h3 class="others_h3">
+                    <pre class="others_pre">
                         Texto sobre SQLite
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_docker menu_child">
                     <h1 class="others_h1">Docker</h1>
-                    <h3 class="others_h3">
+                    <pre class="others_pre">
                         Texto sobre Docker
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_office365 menu_child">
                     <h1 class="others_h1">Office 365</h1>
-                    <h3 class="others_h3">
+                    <pre class="others_pre">
                         Texto sobre Office 365
-                    </h3>
+                    </pre>
                 </div>
 
                 <div class="main_flask menu_child">
                     <h1 class="others_h1">Flask</h1>
-                    <h3 class="others_h3">
+                    <pre class="others_pre">
                         Texto sobre Flask
-                    </h3>
+                    </pre>
                 </div>
             </div>
         </div>

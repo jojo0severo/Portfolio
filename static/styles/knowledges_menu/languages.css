@@ -6,12 +6,12 @@
     margin-top: 75px;
 }
 
-.languages_h1, .languages_h3 {
+.languages_h1, .languages_pre {
     margin-top: 25px;
     font-weight: normal;
 }
 
-.languages_h3 {
+.languages_pre {
     padding-bottom: 40px;
     border-bottom: 1px solid #000000;
 }
