@@ -1,0 +1,46 @@
+.main_experiences {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+}
+
+.experiences_child {
+    width: 57vw;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    margin: 0 auto; 
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1px solid #000000;
+}
+
+.experiences_first{
+    padding-top: 63px;
+}
+
+.experiences_h1, .experiences_pre {
+    margin-top: 15px;
+}
+
+.experiences_h1, .experiences_h5{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.experiences_h1{
+    font-size: 30px;
+}
+
+.experiences_pre {
+    font-size:  20px;
+}
+
+.experiences_h5 {
+    font-style: italic;
+    color: #797979;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+

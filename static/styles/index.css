@@ -1,0 +1,57 @@
+  body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    min-width: 30px;
+    padding-right: 30%;
+    padding-left: 30%;
+    background-color: black;
+  }
+
+  .child{
+    display: none;
+  }
+
+  pre {
+    text-align: justify;
+    white-space: pre-line;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  }
+
+  footer{
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: #333;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    bottom: 0;
+    margin-top: 40px;
+  }
+
+  
+/* @media screen and (max-width: 700px) {
+    .experiences_h1{
+        font-size: 20px;
+    }
+
+    .experiences_h5 {
+        font-size: 10px;
+    }
+    
+    .experiences_pre{
+        font-size:  15px;
+    }
+  } */

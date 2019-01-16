@@ -1,0 +1,40 @@
+  .main_knowledges {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: normal;
+  }
+
+  .main_knowledges div {
+    transition: margin-left .5s;
+    padding: 50px;
+    width: 57vw;
+    border-bottom: 0.015px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main_knowledges span {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .knowledges_h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .knowledges_pre{
+    font-size: 20px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .main_knowledges span {
+      font-size: 15px;
+    }
+
+    .knowledges_h1 {
+      font-size: 20px ;
+    }
+
+    .knowledges_pre{
+      font-size: 15px;
+    }
+  }

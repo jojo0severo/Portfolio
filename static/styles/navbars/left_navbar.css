@@ -1,0 +1,57 @@
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(56, 56, 56);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border: none;
+  }
+
+  .knowledges_nav_pre{
+    color: #cbd476;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #b9b9b9;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+
+
+  @media screen and (max-width: 700px) {
+    .sidenav {
+        padding-top: 40px;
+        max-width: 180px !important;
+    }
+
+    .sidenav :first-child {
+        font-size: 1.5em;
+    }
+
+    .sidenav a {
+        font-size: 14px;
+    }
+  }
