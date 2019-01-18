@@ -6,12 +6,12 @@
     margin-top: 75px;
 }
 
-.speech_h1, .speech_h3 {
+.speech_h1, .speech_pre {
     margin-top: 25px;
     font-weight: normal;
 }
 
-.speech_h3 {
+.speech_pre {
     padding-bottom: 40px;
     border-bottom: 1px solid #000000;
 }

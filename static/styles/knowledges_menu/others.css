@@ -6,12 +6,12 @@
     margin-top: 75px;
 }
 
-.others_h1, .others_h3 {
+.others_h1, .others_pre {
     margin-top: 25px;
     font-weight: normal;
 }
 
-.others_h3 {
+.others_pre {
     padding-bottom: 40px;
     border-bottom: 1px solid #000000;
 }

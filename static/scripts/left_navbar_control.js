@@ -1,3 +1,13 @@
+
+let sticky_button;
+let sticky;
+
+// Define a call to function when scrolling the page
+window.onscroll = function () {
+    // Control if the button will desappear from the screen and set 'position: fixed' whenever it will happen
+    sticky_func()
+};
+
 // Openned navbar (DataScience, Speech, Languages...)
 var current_navbar;
 
@@ -6,16 +16,25 @@ var rollback_navitem;
 
 // Open a chosen navbar
 function open_nav(nav, caller) {
+
+    // Precaution if the user opens another navbar without going back with the sticky button
+    if (sticky_button){
+        close_menu(false);
+    }
+
     let window_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
     // Measure for different screen size
-    if (window_width <= 600) {
-        document.getElementById("main_knowledges").style.marginLeft = "160px";
-        document.getElementById(nav).style.width = "160px";
-    }
-    else {
+    if (window_width > 700) {
         document.querySelector(".main_knowledges").style.marginLeft = "260px";
         document.getElementById(nav).style.width = "260px";
+    }
+    else if(window_width <= 500){
+        document.getElementById(nav).style.width = "160px";
+    }
+    else if (window_width <= 700){
+        document.querySelector(".main_knowledges").style.marginLeft = "160px";
+        document.getElementById(nav).style.width = "160px";
     }
 
     // Close the older navbar if another was openned
@@ -65,27 +84,26 @@ function open_item(item, sub_menu) {
     // Show the button to go back to the previous 
     document.getElementById('back_button').style.display = 'block';
 
+    sticky_button = document.getElementById('back_button')
+    sticky = sticky_button.offsetTop;
+
     // Close the navbar
     close_nav()
-
-    let sticky_button = document.getElementById("back_button");
-
-    // Get the back button position (aka sticky button)
-    let sticky = sticky_button.offsetTop;
-
-    window.onscroll = function () {
-        // Control if the button will desappear from the screen and set 'position: fixed' whenever it will happen
-        sticky_func(sticky_button, sticky) 
-    };
-
 }
 
 // Closes the current navbar
-function close_menu() {
+function close_menu(scroll_to) {
     document.getElementById('screens').style.boxShadow = 'none';
-    document.getElementById('back_button').style.display = 'none';
+    sticky_button.style.display = 'none';
+    sticky_button.classList.remove("sticky_top");
+    sticky_button.classList.remove("sticky_bottom");
+    sticky_button = null;
+    current_navitem.style.marginTop = '0px'
     current_navitem.style.display = 'none';
-    rollback_navitem.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    
+    if (scroll_to){
+        rollback_navitem.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    }
 }
 
 // Look over al the navbar items and closes the openned
@@ -107,27 +125,31 @@ function look_after_openned(item) {
 }
 
 // Control the position of the sticky button
-function sticky_func(sticky_button, sticky) {
-    // If the page top will overlap the sticky button
-    if (window.pageYOffset > sticky) {
-        sticky_button.classList.add("sticky_top");
-        sticky_button.classList.remove("sticky_bottom");
+function sticky_func() {
+    if (sticky_button) {
+        if (window.getComputedStyle(sticky_button).display === 'block') {
+            // If the page top will overlap the sticky button
+            if (window.pageYOffset > sticky) {
+                sticky_button.classList.add("sticky_top");
+                sticky_button.classList.remove("sticky_bottom");
 
-        // Margin added to keep the element in the desired position
-        current_navitem.style.marginTop = '170px'
-    }
+                // Margin added to keep the element in the desired position
+                current_navitem.style.marginTop = '153px'
+            }
 
-    // if the page bottom will overlap the sticky button
-    else if (window.pageYOffset + window.innerHeight < sticky + sticky_button.offsetHeight) {
-        sticky_button.classList.add("sticky_bottom");
-        sticky_button.classList.remove("sticky_top");
-        current_navitem.style.marginTop = '0px'
-    }
+            // if the page bottom will overlap the sticky button
+            else if (window.pageYOffset + window.innerHeight < sticky + sticky_button.offsetHeight) {
+                sticky_button.classList.add("sticky_bottom");
+                sticky_button.classList.remove("sticky_top");
+                current_navitem.style.marginTop = '0px'
+            }
 
-    // if none of the above cases happen
-    else{
-        current_navitem.style.marginTop = '0px'
-        sticky_button.classList.remove("sticky_bottom");
-        sticky_button.classList.remove("sticky_top");
+            // if none of the above cases happen
+            else {
+                current_navitem.style.marginTop = '0px'
+                sticky_button.classList.remove("sticky_bottom");
+                sticky_button.classList.remove("sticky_top");
+            }
+        }
     }
 }

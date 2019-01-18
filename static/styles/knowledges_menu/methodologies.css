@@ -6,12 +6,12 @@
     margin-top: 75px;
 }
 
-.methodologies_h1, .methodologies_h3 {
+.methodologies_h1, .methodologies_pre {
     margin-top: 25px;
     font-weight: normal;
 }
 
-.methodologies_h3 {
+.methodologies_pre {
     padding-bottom: 40px;
     border-bottom: 1px solid #000000;
 }

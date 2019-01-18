@@ -24,17 +24,39 @@
   .knowledges_pre{
     font-size: 20px;
   }
-  
-  @media screen and (max-width: 700px) {
-    .main_knowledges span {
-      font-size: 15px;
+
+  @media screen and (max-width: 700px){
+    .main_knowledges div{
+      padding: 25px;
     }
 
-    .knowledges_h1 {
-      font-size: 20px ;
+    .main_knowledges span{
+      font-size: 18px;
+    }
+
+    .knowledges_h1{
+      font-size: 23px;
     }
 
     .knowledges_pre{
-      font-size: 15px;
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    .main_knowledges div{
+      padding: 10px;
+    }
+
+    .main_knowledges span{
+      font-size: 13px;
+    }
+
+    .knowledges_h1{
+      font-size: 17.5px;
+    }
+
+    .knowledges_pre{
+      font-size: 13px;
     }
   }
