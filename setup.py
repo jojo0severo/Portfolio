@@ -7,7 +7,7 @@ print(app)
 
 @app.route('/')
 def start():
-    return render_template('tela_inicial.html')
+    return render_template('index.html')
 
 
 if __name__ == '__main__':

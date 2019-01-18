@@ -8,28 +8,28 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/index.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/screens/experiences.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/screens/courses_education.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/screens/knowledges.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/screens/contact.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/screens/home.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/screens/experiences.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/screens/courses_education.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/screens/knowledges.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/screens/contact.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/screens/home.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="../static/styles/navbars/top_navbar.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/navbars/left_navbar.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/navbars/top_navbar.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/navbars/left_navbar.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="../static/styles/knowledges_menu/languages.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/knowledges_menu/datascience.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/knowledges_menu/methodologies.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/knowledges_menu/others.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/knowledges_menu/speech.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/knowledges_menu/web.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/knowledges_menu/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/knowledges_menu/languages.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/knowledges_menu/datascience.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/knowledges_menu/methodologies.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/knowledges_menu/others.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/knowledges_menu/speech.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/knowledges_menu/web.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/knowledges_menu/main.css') }}">
 
 
-    <script src="../static/scripts/show_screens.js"></script>
-    <script src="../static/scripts/top_navbar_control.js"></script>
-    <script src="../static/scripts/left_navbar_control.js"></script>
+    <script src="{{ url_for('static',filename='scripts/show_screens.js') }}"></script>
+    <script src="{{ url_for('static',filename='scripts/top_navbar_control.js') }}"></script>
+    <script src="{{ url_for('static',filename='scripts/left_navbar_control.js') }}"></script>
 
     <title>Portfolio João Severo</title>
 </head>
@@ -37,7 +37,7 @@
 <body onload="show('home', true)">
 
     <header>
-        <img src="../static/images/site/header.png" alt="Linguagens de Programação">
+        <img src="{{ url_for('static',filename='images/site/header.png') }}" alt="Linguagens de Programação">
     </header>
 
     <div class="topnav" id="navbar">
@@ -49,7 +49,7 @@
             <br>Formação</a>
         <a class="contact" href="javascript:show('contact')">Contato</a>
         <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars icon"></i>
         </a>
     </div>
 
@@ -67,13 +67,13 @@
 
                     Pensando nessa proximidade que eu gostaria de ter com o entrevistador, o modelo desenhado para este site é simples e equilibrado, balanceando a capacidade que terei de mostrar meu trabalho e minhas habilidades sem criar algo super carregado de efeitos e estilos mostrando que sei e afastando o entrevistador. Então vamos sentar juntos com nossos cafés e conversar, onde cada pergunta que fizer vai ser através de um clique e minhas repostas serão as exibições na tela.
                     
-                    <hr>
+
                     <strong>Quem é João Severo...</strong>
                     Bom, sou um cara criativo que gosta de brincar de programador, construindo desde aplicações para uso próprio ou melhorias que me ajudem a crescer na carreira até a sistemas com certa complexidade. Um case de um sistema complexo em que o cliente foi um membro da minha própria família é o sistema de uma <spam style="cursor: pointer;"><u>Mercearia</u></spam>, o cliente queria controlar o seu lucro e seus gastos ao fim do mês de modo a não ter que rever todas as suas anotações feitas durante o mês para fazer um somatório, calcular o lucro, verificar a conta... Chega, muita coisa! Para automatizar foi feito um sistema que recebe os gastos diários do cliente e salva em um banco de dados, no fim do mês basta verificar o lucro, gasto total e ganho total num clique!
                     
                     Esse tipo de construção me atrai muito e me diverte, mas sou um cara variado... (hehe) Um dos meus hobbies se tornou o estudo de Data Science, pois quando me tornei sabido da existência desse campo foi tiro e queda. Me apaixonei pela área e sempre tento implementar um certo nível de Business Intelligence ou Inteligência Artificial nas minhas aplicações, seja uma visão macro sobre valores dando uma visão que o empreendedor necessita para realizar alguma decisão, seja construindo uma pequena aplicação para uso próprio em que faço o <spam style="cursor: pointer;"><u>Mário encontrar a Princesa Peach</u></spam> xD.
                     
-                    <hr>
+                    
                     <strong>Onde achar o conteúdo...</strong>
                     O site foi organizado da forma mais simples e intuitiva possível para garantir a facilidade de chegar nas informações sem ter que ler um texto enorme como esse.
 
@@ -132,6 +132,7 @@
             <div class="child" id="knowledges">
                 <div id="languages_navbar" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="close_nav()">&times;</a>
+                    <pre class="knowledges_nav_pre">&nbsp; Linguagens</pre>
                     <a href="javascript:open_item('python', 'languages')">Python</a>
                     <a href="javascript:open_item('java', 'languages')">Java</a>
                     <a href="javascript:open_item('javascript', 'languages')">Javascript</a>
@@ -169,6 +170,7 @@
                 </div>
                 <div id="speech_navbar" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="close_nav()">&times;</a>
+                    <pre class="knowledges_nav_pre">&nbsp; Línguas</pre>
                     <a href="javascript:open_item('english', 'speech')">Inglês</a>
                     <a href="javascript:open_item('spanish', 'speech')">Espanhol</a>
                     <a href="javascript:open_item('portuguese', 'speech')">Português</a>
@@ -176,6 +178,7 @@
 
                 <div id="methodologies_navbar" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="close_nav()">&times;</a>
+                    <pre class="knowledges_nav_pre">&nbsp; Metodologias</pre>
                     <a href="javascript:open_item('scrum', 'methodologies')">Scrum</a>
                     <a href="javascript:open_item('kanban', 'methodologies')">Kanban</a>
                 </div>
@@ -194,7 +197,6 @@
                     <pre class="knowledges_nav_pre">&nbsp; Outros</pre>
                     <a href="javascript:open_item('docker', 'others')">Docker</a>
                     <a href="javascript:open_item('office365', 'others')">Office 365</a>
-                    <a href="javascript:open_item('flask', 'others')">Flask</a>
                 </div>
 
 
@@ -236,7 +238,7 @@
             <div class="child" id="works">
                 <div class="main_works">
                     <pre class="works_pre">
-                    Terá algo tenso de fazer aqui Realizacoes
+                    Terá algo tenso de fazer aqui, Realizacoes
                 </pre>
                 </div>
             </div>
@@ -252,37 +254,37 @@
                     <div class="certificates_child">
                         <h1 class="certificates_h1">Python 3 - Iniciante ao Avançado</h1>
                         <pre class="certificates_pre">O curso cobre todos os conhecimentos básicos que um programador Python necessita para conhecer a linguagem e mais que isso ele apresenta conceitos avançados que não seriam facilmente encontrados, dessa forma sendo uma ótima porta de entrada para quem deseja programar em Python e um ótimo conhecimento para mim.</pre>
-                        <img class="certificates_img" src="../static/images/certificates/PythonAvançado.PNG" alt="PythonAvançadoUdemyCourse">
+                        <img class="certificates_img" src="{{ url_for('static',filename='images/certificates/PythonAvançado.PNG') }}" alt="PythonAvançadoUdemyCourse">
                     </div>
                     <div class="certificates_child">
                         <h1 class="certificates_h1">Data Science: Natural Language Processing</h1>
                         <pre class="certificates_pre">Feito por um entusiasma de Data Science, o curso é uma apresentação com exemplos de utilização para garantir uma segurança ao aluno na hora de colocar em prática o que aprendeu. É dividido em vários módulos que me ajudaram a entender melhor como é possível fazer a máquina nos entender e apresentar resultados baseados na análise do que nós informamos. O professor utiliza a biblioteca Scikit-Learn para construir os modelos, uma importante bilbioteca para quem deseja mergulhar no mundo de Data Science com Python.</pre>
-                        <img class="certificates_img" src="../static/images/certificates/NaturalLanguageProcessing.PNG" alt="NLPUdemyCourse">
+                        <img class="certificates_img" src="{{ url_for('static',filename='images/certificates/NaturalLanguageProcessing.PNG') }}" alt="NLPUdemyCourse">
                     </div>
                     <div class="certificates_child">
                         <h1 class="certificates_h1">Fundamentos de Engenharia de Software</h1>
                         <pre class="certificates_pre">Para afirmar minha posição como engenheiro de software e testar meus conhecimentos decidi fazer a certificação da Microsoft, "Software Development Fundamentals" para pôr a prova o que eu realmente sabia e, felizmente, consegui passar na prova mesmo não tendo pleno conhecimento das tecnologias da Microsoft como .Net e C#. Pude perceber que muitos dos conceitos que achava que eram intrínsecos às linguagens de programação poderiam ser muito bem separados e utilizados de forma geral após essa prova.</pre>
-                        <img class="certificates_img" src="../static/images/certificates/MicrosoftSoftwareDeveloperBadge.png" alt="MicrosoftSoftwareDeveloperBadge">
+                        <img class="certificates_img" src="{{ url_for('static',filename='images/certificates/SoftwareDeveloperFundamentals.png') }}" alt="SoftwareDeveloperFundamentals">
                     </div>
                     <div class="certificates_child">
                         <h1 class="certificates_h1">Pandas</h1>
                         <pre class="certificates_pre">Entrando na área de Data Science, senti a necessidade de aprender mais sobre as bibliotecas e frameworks que iria utilizar na minha carreira e me deparei com este curso que aborda uma das mais importantes quando o assunto é trabalhar com grande volume de arquivos e tabelas de csv, excel, etc. O curso é curto, mas me deu uma ótima visão sobre a biblioteca e um ótimo conteúdo na área de Data Science.</pre>
-                        <img class="certificates_img" src="../static/images/certificates/Pandas.PNG" alt="PandasUdemyCourse">
+                        <img class="certificates_img" src="{{ url_for('static',filename='images/certificates/Pandas.PNG') }}" alt="PandasUdemyCourse">
                     </div>
                     <div class="certificates_child">
                         <h1 class="certificates_h1">Melhores práticas com Python</h1>
                         <pre class="certificates_pre">Ao me aprofundar no estudo de Python tanto para a área de Data Science quanto para desenvolvimento de aplicações e sistemas, senti a falta de uma base que poderia me dizer se o que estava fazendo estava seguindo algum padrão de projeto bom ou se estava utilizando Python da maneira correta e mais pythonica possível. Pensando nisso fui atrás deste curso que me ensinou algumas técnicas que não conhecia e me permitiu amplicar meus conhecimentos quanto a linguagem pura.</pre>
-                        <img class="certificates_img" src="../static/images/certificates/BestPracticesPython.PNG" alt="BestPracticesUdemyCourse">
+                        <img class="certificates_img" src="{{ url_for('static',filename='images/certificates/BestPracticesPython.PNG') }}" alt="BestPracticesUdemyCourse">
                     </div>
                     <div class="certificates_child">
                         <h1 class="certificates_h1">Expressões Regulares (Regex)</h1>
                         <pre class="certificates_pre">Assim como o caso do Pandas, o Regex se tornou algo atrativo e que achei necessário aprofundar conhecimentos, afinal como processar grandes níveis de conteúdo e tratá-los de forma eficiente sem utilizar expressões regulares? Eu não saberia dizer. Esse curso traz todos conhecimentos básicos para começar a utilizar Regex e alguns mais avançados (que inclusive utilizei em alguns trabalhos pessoais) que são necessários em algumas situações que envolvem várias variáveis para a determinação de um produto.</pre>
-                        <img class="certificates_img" src="../static/images/certificates/Regex.PNG" alt="RegexUdemyCourse">
+                        <img class="certificates_img" src="{{ url_for('static',filename='images/certificates/Regex.PNG') }}" alt="RegexUdemyCourse">
                     </div>
                     <div class="certificates_child">
                         <h1 class="certificates_h1">SQLite com Python</h1>
                         <pre class="certificates_pre">O trabalho com banco de dados é algo que não tem como fugir atualmente e como encontrar um que seja gratuito e de fácil manipulação para aprendizado? A resposta com certeza é SQLite. Embora seja mais limitado que um banco de dados hospedado em um servidor que possui uma faiclidade estupenda de expansão, o SQLite é perfeito para aprendizado e pequenos/médios volumes de dados, inclusive foi o banco utilizado na construção do meu projeto de freelance onde a duração do banco de dados foi planejada para um mínimo de dez anos.</pre>
-                        <img class="certificates_img" src="../static/images/certificates/SQLite.PNG" alt="SQLiteUdemyCourse">
+                        <img class="certificates_img" src="{{ url_for('static',filename='images/certificates/SQLite.PNG') }}" alt="SQLiteUdemyCourse">
                     </div>
                 </div>
             </div>
@@ -300,7 +302,7 @@
                     <table class="contact_styling">
                         <tr>
                             <th>
-                                <img class="contact_img" src="../static/images//icons/WhatsAppIcone.png">
+                                <img class="contact_img" src="{{ url_for('static',filename='images/icons/WhatsAppIcone.png') }}">
                             </th>
                             <th>
                                 Celular: (51) 99455-6722
@@ -308,7 +310,7 @@
                         </tr>
                         <tr>
                             <th>
-                                <img class="contact_img" src="../static/images//icons/GmailIcon.png">
+                                <img class="contact_img" src="{{ url_for('static',filename='images/icons/GmailIcon.png') }}">
                             </th>
                             <th>
                                 E-mail:
@@ -317,7 +319,7 @@
                         </tr>
                         <tr>
                             <th>
-                                <img class="contact_img" src="../static/images//icons/LinkedinIcon.png">
+                                <img class="contact_img" src="{{ url_for('static',filename='images/icons/LinkedinIcon.png') }}">
                             </th>
                             <th>
                                 Linkedin:
@@ -327,7 +329,7 @@
                         </tr>
                         <tr>
                             <th>
-                                <img class="contact_img" src="../static/images//icons/FacebookIcone.png">
+                                <img class="contact_img" src="{{ url_for('static',filename='images//icons/FacebookIcone.png') }}">
                             </th>
                             <th>
                                 Facebook:
@@ -347,7 +349,7 @@
                     <table class="contact_styling">
                         <tr>
                             <th>
-                                <img class="contact_img" src="../static/images/icons/GitHubIcone.png">
+                                <img class="contact_img" src="{{ url_for('static',filename='images/icons/GitHubIcone.png') }}">
                             </th>
                             <th>
                                 GitHub:
@@ -361,34 +363,41 @@
         </div>
 
         <div id="menu_knowledges">
-            <button class="sticky menu_child" id="back_button" onclick="close_menu(true)">VOLTAR NESSA PORRA</button>
+            <button class="sticky menu_child" id="back_button" onclick="close_menu(true)">Voltar para seção</button>
 
             <div class="main_languages" id="languages">
                 <div class="main_python menu_child">
                     <h1 class="languages_h1">Python</h1>
                     <pre class="languages_pre">
-                        Texto sobre Python
+                        Minha linguagem preferida atualmente. Conheci o Python através de um amigo que tinha começado a estudar e achei uma bobagem, como pode uma linguagem que não precisa de ponto e vírgula, chaves, classes... WTF. Como tempo e estudo ele foi me ganhando conforme eu ia aumentando meu conhecimento. <br><br>No fim das contas acabei me apaixonando por Python e hoje, depois de muito estudo e práticas, posso dizer que sou um desenvolvedor Python. <br><br>Quando o amor por Python bateu eu comecei a estudar mais a linguagem, frameworks, bibliotecas, tudo. E juntamento com o estudo a prática foi surgindo, seja em sites de desafios de programação, seja profissionalmente. Focando na prática profissional, eu trabalhei com Python na empresa Cloud2Go promovendo algumas automações e facilidades que antes não eram possíveis ou tinham muito trabalho manual. Além disso trabalhei na construção de dois sistemas completos, um que entregava para o cliente um sistema capaz de cadastrar, registrar e apresentar relatórios sobre vendas, gastos e lucros que ele possuía, outro com uma equipe de desenvolvimento para construir um sistema que simulasse uma enchente para testes de inteligência artificial.
+                    </pre>
+                </div>
+
+                <div class="main_r menu_child">
+                    <h1 class="languages_h1">R</h1>
+                    <pre class="languages_pre">
+                        Meu conhecimento na linguagem R surgiu junto com o meu interesse pelo campo de Data Science. Comecei a estudar a linguagem e algumas de suas bibliotecas para brincar com o tratamento e exibição de dados, pois é uma linguagem extremamente otimizada para utiizações matemáticas e gostei de explorar esse lado dela. <br><br> Embora tenha me entusiasmado com a linguagem e visto suas capacidades e facilidades, não aprofundei muito mais do que o necessário para brincar de cientista de dados com ela, pois o Python conseguia suprir o que eu necessitava de forma semelhante e com uma familiaridade maior (mesmo assim continue lendo sobre R, vai entender).
                     </pre>
                 </div>
 
                 <div class="main_java menu_child">
                     <h1 class="languages_h1">Java</h1>
                     <pre class="languages_pre">
-                        Texto sobre Java
+                        O bom e velho Java, planejado para ser robusto e rodar em qualquer sistema, acabou mudando bastante seu foco e hoje parece que quer se tornar outra implementando tipagem dinâmica. Conheci a linguagem Java quando comecei a fazer faculdade e fui estudando e fazendo trabalhos todos baseados em Java. Durante quase dois anos eu não conseguia imaginar outra linguagem que eu fosse gostar mais do que o Java (as coisas mudam, né... Python...) e acabei por produzir diversos projetinhos em Java. <br><br>O maior deles foi um projeto que envolvia busca em largura para determinar quais vôos realizavam as maiores rotas, foi um projeto desenvolvido utilizando Java, JavaFX e JUnit e se baseava em um sistema de aeroporto que gerenciar aviões e tinha algumas exibições como os locais do mundo que mais tinha vôos, rotas de aviões escolhidos... Enfim, aprendi muito bem a utilizar e trabalhar com o Java e sempre vou pensar nele como a linguagem que me aproximou desse mundo. <br><br>Embora não tenha tido experiências profissionais com Java, eu trabalhei muito com a linguagem, pois era necessário o conhecimento para fazer os trabalhos da faculdade.
                     </pre>
                 </div>
 
                 <div class="main_javascript menu_child">
                     <h1 class="languages_h1">Javascript</h1>
                     <pre class="languages_pre">
-                        Texto sobre Javascript
+                        Javascript é basicamente o filhote que se perdeu e acabou dando certo na vida. Eu já possuía conhecimentos fortes em Java e um certo conhecimento em Python quando comecei a estudar desenvolvimento web e, como não é possível desenvolver web sem falar em javascript (sim, tem como falar sobre web sem falar em php, mas não sem falar em javascript), comecei a estudar a linguagem mais focado no desenvolvimento web para que podesse desenvolver minhas aplicações e brincar com a construção de sites responsívos que interagiam com o usuário (se quiser interação maior, a aba de realizações tá top). 
                     </pre>
                 </div>
 
                 <div class="main_sql menu_child">
                     <h1 class="languages_h1">SQL</h1>
                     <pre class="languages_pre">
-                        Texto sobre SQL
+                        Conheci o SQL durante a cadeira "Laboratório de Banco de Dados" e senti uma facilidade enorme com ela. Sério, parecia que tinhamos nos apaixonado e nos entendíamos muito bem e por casua dessa facilidade com ela eu decidi investir mais do meu tempo para estudar essa linguagem que parecia ser tão útil e tão simples ao mesmo tempo. Estudei SQL além das aulas para poder construir aplicações pequenas e aumentar meu conhecimento com a linguagem e também fiz um curso voltado para o SQLite que agregou muito para o meu crescimento nesta linguagem. <br><br>Embora tenha começado a estudar na faculdade, eu já fui capaz de utilizar meu conhecimento na linguagem para projetos reais de desenvolvimento. O primeiro que fez uso dos meus conhecimentos em SQL foi o freelance que fiz com o cliente que precisava registrar valores no sistema para ao fim do mês obter uma relação do gasto, ganho e lucro obtidos no mês e também oferecer um pouco de Business Intelligence na forma de um gráfico expondo o andamento dos lucros da empresa ao longo do tempo. <br><br>Basicamente é uma linguagem que adoro e penso ser extremamente útil para todos estudar e entender como funciona.
                     </pre>
                 </div>
             </div>
@@ -399,7 +408,7 @@
                 <div class="main_python menu_child">
                     <h1 class="datascience_h1">Python</h1>
                     <pre class="datascience_pre">
-                        Python dentro da área de Data Science tem me mostrado ser uma linguagem incrível com um potencial de crescimento enorme. Sempre que começo a estudar sobre o assunto e vejo uma biblioteca nova, um framework novo, códigos refatorados pensando no desenvolvedor... Me lembra que a comunidade por trás do Python ainda está quente e parece que vai estar por um bom tempo! <br><br>Foco... Dentro da área de Data Science com Python eu gosto de trabalhar com a biblioteca Pandas para fazer um pré-processamento de dados de forma que seja fácil e rápido o seu tratamento em conjunto com a biblioteca de expressões regulares Regex. Quando o assunto vira uso de Machine Learning ou Inteligência Artificial, possuo conhecimento com as bibliotecas Scikit-Learn para o uso de diferentes modelos. Como o usuário não se importa muito com a quantidade ou como é feito o código sempre é preciso ter algum tipo de exibição e para isso costumo usar a biblioteca Matplotlib que é extremamente útil na hora de exibir gráficos e resultados para o usuário.
+                        Python dentro da área de Data Science tem se mostrado ser uma linguagem incrível com um potencial de crescimento enorme. Sempre que começo a estudar sobre o assunto e vejo uma biblioteca nova, um framework novo, códigos refatorados pensando no desenvolvedor... Me lembra que a comunidade por trás do Python ainda está quente e parece que vai estar por um bom tempo! <br><br>Foco... Dentro da área de Data Science com Python eu gosto de trabalhar com a biblioteca Pandas para fazer um pré-processamento de dados de forma que seja fácil e rápido o seu tratamento em conjunto com a biblioteca de expressões regulares Regex. Quando o assunto vira uso de Machine Learning ou Inteligência Artificial, possuo conhecimento com as bibliotecas Scikit-Learn para o uso de diferentes modelos. Como o usuário não se importa muito com a quantidade ou como é feito o código sempre é preciso ter algum tipo de exibição e para isso costumo usar a biblioteca Matplotlib que é extremamente útil na hora de exibir gráficos e resultados para o usuário.
                     </pre>
                 </div>
 
@@ -420,7 +429,7 @@
                 <div class="main_scikit menu_child">
                     <h1 class="datascience_h1">Scikit-Learn</h1>
                     <pre class="datascience_pre">
-                        Ah, Schikit-Learn... Maravilhosa biblioteca para o uso de modelos de Machine Learning que são extremamente otimizados e possuem um ótimo desempenho. Dentro dos diversos modelos disponíveis já trabalhei diretamente com NaiveBayes and AdaBoost.
+                        Ah, Scikit-Learn... Maravilhosa biblioteca para o uso de modelos de Machine Learning que são extremamente otimizados e possuem um ótimo desempenho. Dentro dos diversos modelos disponíveis já trabalhei diretamente com NaiveBayes and AdaBoost.
                     </pre>
                 </div>
 
@@ -466,55 +475,55 @@
                 <div class="main_javascript menu_child">
                     <h1 class="web_h1">Javascript</h1>
                     <pre class="web_pre">
-                        Texto sobre Javascript
+                        Estudando desenvolvimento web requer o mínimo de conhecimento em Javascript, ainda mais agora que Javascript pode ser utilizado até no lado do servidor. Fiz um curso completo de desenvolvimento web que fazia uso de Javascript como principal linguagem tanto do servidor quanto da aplicação rodando no cliente e possuo um bom conhecimento sobre. <br><br>Profissionalmente trabalhei com Javascript no meu primeiro projeto na AGES que, apesar de ter me focado no desenvolvimento mobile, participei da construção da parte web também realizando algumas funções para coleta de dados. Além disso eu construi a maioria desse site utilizando HTML/CSS e Javascript, que se encarrega de realizar a maioria dos efeitos que a página possui. Além desse contato mais web com Javascript, também trabalhei com algumas bibliotecas da Microsoft com o Javascript para realizar demonstração em workshops sobre Power BI e outras ferramentas Microsoft.
                     </pre>
                 </div>
 
                 <div class="main_html menu_child">
                     <h1 class="web_h1">HTML</h1>
                     <pre class="web_pre">
-                        Texto sobre HTML
+                        Comecei a estudar HTML por causa de uma demanda da faculdade na construção de uma aplicação web e achie interessante, mas não me chamou muito a atenção devido a forma repetitiva de desenvolvimento que necessita de vários componentes iguais e muitas linhas de código produzindo pouco resultado final e frustrando um pouco por causa desse baixo "rendimento". Mas não é possível dizer que html não é extremamente útil para quem deseja realizar desenvolvimento web e coisas "bonitas" (alianda o CSS fica top, mas estamos no tópico de HTML). <br><br>A partir do primeiro contato com a linguagem de marcação não pesquisei muito sobre e acabei vindo a utilizá-la agora depois de um ano sem tocar mais para a construção deste projeto e estou realmente impressionado com a capacidade que ele possui, mas a minha decepcção continua quando o assunto é repetição e verbosidade. :/
                     </pre>
                 </div>
 
                 <div class="main_css menu_child">
                     <h1 class="web_h1">CSS</h1>
                     <pre class="web_pre">
-                        Texto sobre CSS
+                        Confesso que sempre tive certo preconceito com CSS, "o que uma linguagem que só deixa as coisas bonitinhas tem a oferecer?". Tadinho, sabia de nada, inocente... Comecei a estudar CSS junto com HTML para a construção de um sistema web que exigia uma certa "beleza" considerando que seria exibido para o usuário e não adianta nada construir o melhro sistema do mundo se ele não possui uma interface amigável que facilite ao invés de dificultar o trabalho do usuário. Pensando nisso e após uma boa briga interna, comecei a estudar CSS e vi as possibilidades que ele oferecia, porém não me aprofundei no assunto, pois fugia das minhas ideias de desenvolvedor backend das cavernas. Um ano depois aqui estou eu desenvolvendo um portfolio com mais de 200 linhas de CSS :) . Minha experiência se resume a este site e a criação do sistema para o empresário para registro de ganhos, gastos e lucro que envolvia grande parte do projeto em interface gráfica.
                     </pre>
                 </div>
 
                 <div class="main_flask menu_child">
                     <h1 class="web_h1">Flask</h1>
                     <pre class="web_pre">
-                        Texto sobre Flask
-                    </pre>
-                </div>
-
-                <div class="main_azure menu_child">
-                    <h1 class="web_h1">Azure</h1>
-                    <pre class="web_pre">
-                        Texto sobre Azure
+                        Flask é o microframework que mais gosto atualmente pela simplicidade e capacidade de expansão da aplicação que ele possui. Trabalhei com Flask e sockets no projeto de simulação de desastres da AGES que seria um simulador onde se conectariam alguns tipos de inteligência artificial para ver como reagiriam num ambiente em que aconteceuuma enchente. O projeto foi focado para pesquisadores ao redor do mundo e como tal a documentação deveria ser inteira em inglês (o que não foi um problema felizmente, a equipe sabia bem o que estava fazendo). Além dessa primeira experiência, eu desenvolvi um sistema de Poker para caso as aulas da faculdade estejam muito chatas algum dia... Brincadeira (ou não), o sistema se baseia em um jogo de Poker normal com cada jogador recebendo suas cartas e fazendo jogadas e para conectar todos foi utilizado o Flask para permitir que cada jogador esteja em seu computador, imagina jogar Poker e ver as cartas do seu oponente... Resumidamente, tenho um bom conhecimento e experiência com a ferramenta.
                     </pre>
                 </div>
 
                 <div class="main_django menu_child">
                     <h1 class="web_h1">Django</h1>
                     <pre class="web_pre">
-                        Texto sobre Django
+                        Conheci o Django meio perdido nos meus estudos para desenvolvimento web e achei um ótimo framework, extremamente completo e que vai satisfazer quaisquer necessidades que o usuário possa ter, talvez completementando com uma ou outra biblioteca, mas é um framework bastante completo. <br><br>Como nunca foi muito do meu interesse o desenvolvimento web, eu nunca cheguei a procurar muito a fundo sobre este framework principalmente pelo Flask atender às minhas necessidade e ser mais leve (os microframeworks têm suas vantagens). Apesar de não ter pesquisado a fundo eu acabei sim estudando como funciona e como utilizá-lo de modo que me sinto confortável na construção de uma aplicação que o utilize.
+                    </pre>
+                </div>
+
+                <div class="main_azure menu_child">
+                    <h1 class="web_h1">Azure</h1>
+                    <pre class="web_pre">
+                        Conheci a plataforma Azure através do meu emprego na Cloud2Go em que trabalhei com a criação de aplicações web e que necessitavam ser executadas em nuvem para garantir disponibilidade para clientes. Além desse primeiro contato, criei protótipos em C# e Javascript para apresentações e workshops feitos pelo meu chefe Artur Hansen. Adquiri conhecimento na prática com o Azure e achei muito boa a forma e a segurança que a plataforma trata os dados do usuário.<br><br>Dentro das minhas customizações na empresa, fiz uma aplicação que recuperava os dados de e-mail de 
                     </pre>
                 </div>
 
                 <div class="main_heroku menu_child">
                     <h1 class="web_h1">Heroku</h1>
                     <pre class="web_pre">
-                        Texto sobre Heroku
+                        Conheci o Heroku através de colegas que tinham utilizado como servidor para testes e pensei "Hm, top, mas e daí?". Não dei muita importância no começo até que comecei a estudar mais desenvolvimento web e entender melhor como funcionava toda a relação de servidor, aplicação, sessões... Enfim. Quando comecei a construir este portfolio pesquisei bastante sobre como hospedar um site sem ter que pagar, mas com a possibilidade de eu mesmo construir cada pedacinho dele, afinal de contas era o meu site, não algo que copiei e colei de algum lugar. O Heroku acabou sendo minha escolha para hospedar minha aplicação e tornar disponível para todos acessarem de qualquer dispositivo. <br><br>Minha experiência e conhecimento com a ferramenta não vão muito além de um uso convencional de alguém que precisa rodar uma aplicação e não quer ser cobrado por isso.
                     </pre>
                 </div>
             </div>
 
 
-
+            
             <div class="main_speech" id="speech">
                 <div class="main_english menu_child">
                     <h1 class="speech_h1">Inglês</h1>
@@ -544,14 +553,14 @@
                 <div class="main_scrum menu_child">
                     <h1 class="methodologies_h1">Scrum</h1>
                     <pre class="speech_pre">
-                        Texto sobre Scrum
+                        A metodologia ágil Scrum foi apresentada pra mim através de uma cadeira da faculdade onde trabalhávamos com clientes reais e em um grupo de desenvolvimento, nos dando o feeling de uma experiência de trabalho real com prazos e entregas previstas. A partir desse primeiro contato comecei a estudar um pouco mais sobre a metodologia e como ela funcionava e foi me interessando de forma que acredito ser uma das formas mais eficientes de desenvolvimento de software considerando projetos que dependem do usuário, ou seja, se o usuário é o foco de uso do projeto e não um sistema interno ou de automação ele precisa gostar e se sentir confortável utilizando, dessa forma qualquer alteração que precise ser feita mais ao fim do produto causaria mais prejuízo se não tivesse uma metodologia como o Scrum que pratica a entrega em sprints e validação do conteúdo entregue. Pensando em tudo isso me vi obrigado a estudar e entender mais sobre o Scrum e agora tenho plena confiança em aplicar e seguir a metodologia.
                     </pre>
                 </div>
 
                 <div class="main_kanban menu_child">
                     <h1 class="methodologies_h1">Kanban</h1>
                     <pre class="speech_pre">
-                        Texto sobre Kanban
+                        Assim como o Scrum, o Kanban apareceu para mim durantes minhas pesquisas sobre metodologias ágeis, inicialmente sobre Scrum e então Kanban. Achei interessante a forma com que trata o andamento do desenvolvimento, utilizando uma forma mais fluída e menos rígida de entregas permitindo maior maleabilidade da equipe e do tempo disponível de desenvolvimento. <br><br>Apesar de não possuir experiências profissionais com o Kanban me sinto capaz de atuar no gerenciamento de uma equipe que aplique esta metodologia.
                     </pre>
                 </div>
             </div>
@@ -562,63 +571,56 @@
                 <div class="main_android menu_child">
                     <h1 class="others_h1">Android</h1>
                     <pre class="others_pre">
-                        Texto sobre Android
+                        Android é sem dúvidas o sistema que mais gosto (fãs de IOS me desculpem, mas não vai rolar). Trabalhei com desenvolvimento de aplicações Android utilizando Java para Android na cadeira AGES, onde o cliente queria uma aplicação que fosse possível cadastrar receitas e criar um gerenciamento de grupos e alunos, etc. O produto saiu, mas a vontade de desenvolver mais não saiu. Comecei a fazer pequenos aplicativos para uso pessoal para controle de gastos, agendadores de tarefas, coisas simples. Me apaixonei pelo desenvolvimento deste tipo de aplicativo e, se não fosse pelo campo de Data Science, eu me dedicaria a ser desenvolvedor Android. 
                     </pre>
                 </div>
 
                 <div class="main_c/c++ menu_child">
                     <h1 class="others_h1">C/C++</h1>
                     <pre class="others_pre">
-                        Texto sobre C/C++
+                        Resumo meu conhecimento em C/C++ em: um nerd no meio de festas lendo apostilas. Quando comecei a estudar programação comecei por Java, mas descobri diversas outras linguagens que são de extrema importância ou que fundaram o que conhecemos como linguagens de programação atualmente. Bom, não é possível discutir sobre linguagens antigas sem falar em C e também não é possível falar sore performance sem falar em C, pensando nisso comecei a pesquisar sobre e me interessar pela sintaxe. Como disse antes meu conhecimento é conhecimento de apostila, a única prática que tenho é quando algum amigo meu de outro curso precisa de ajuda e eles programam em C.
                     </pre>
                 </div>
 
                 <div class="main_linux menu_child">
                     <h1 class="others_h1">Linux</h1>
                     <pre class="others_pre">
-                        Texto sobre Linux
+                        Linux é um dos grandes sistemas operacionais (e o único que funciona como deveria, desculpa amantes de Microsoft), meu conhecimento sobre o sistema vem de estudos pouco aprofundados sobre e de todos os problemas que tive que corrigir no meu notebook e, honestamente, acho que foi a melhor maneira de conhecer e aprender sobre. Comprei meu notebook com Linux de fábrica e como qualquer coisa que a empresa não consegue te vender, ele veio absolutamente zoado (notebook Dell Inspiron 15 7567 se quiser saber para não comprar com Linux) e tive que fazer toda a correção do sistema assim cmo instalaçõ de novas ISO's para fazer funcionar, pois a garantia não cobria o software. Enfim, adquiri bastante conhecimento sobre como o sistema operacional funciona, alocação de memória e o quanto as empresas não querem que tu use Linux.
                     </pre>
                 </div>
 
                 <div class="main_windows menu_child">
                     <h1 class="others_h1">Windows</h1>
                     <pre class="others_pre">
-                        Texto sobre Windows
+                        O meu melô com o Windows foi semelhante ao Linux, pois no fim das contas acabei instalando o Windows, pois nenhuma (sério, nenhuma, testei kali, ubuntu, mint, elementary....) ISO funcionava. Desisti e me tornei pró em arrumar problema no Windows já que meu notebook veio com SSD de 128 e não suportava todas as intalações (maldito AppData), dessa forma consegui fazer mutretas para que o HDD fosse o único utilizado durnte a instalação (causando alguns problemas, mas eu consigo rodar então tô feliz). Apesar de todo esse problema meu conhecimento sobre o Windows também vem e usuário já que possuo e brinco com ele desde que tinha 14 anos.
                     </pre>
                 </div>
 
                 <div class="main_mongo menu_child">
                     <h1 class="others_h1">MongoDB</h1>
                     <pre class="others_pre">
-                        Texto sobre MongoDB
+                        MongoDB, um banco de dados completo e não relacional, perfeito para se perder completamente ou otimizar muito consultas ao banco. Meu conhecimento se limita aos meus extensos estudos sobre a ferramenta e pequenos protótipos de teste, mas posso garantir que sei utilziar e poderia implantá-lo em um sistema Python, por que digo isso? Bom, porque pelos meus estudos eu me senti capaz e seguro de desenvolver qualquer aplicação que faça uso do Mongo.
                     </pre>
                 </div>
 
                 <div class="main_sqlite menu_child">
                     <h1 class="others_h1">SQLite</h1>
                     <pre class="others_pre">
-                        Texto sobre SQLite
+                        Um banco de dados versão pocket hehe. Adoro o SQLite devido a sua fácil usabilidade e manutenção. Bom, conhecimento. Meus conhecimentos em SQLite derivam dos meus conhecimentos em SQL da Oracle que possuem uma sintaxe extremamente similar (sim, existem diferenças) e que estudei em duas ou três cadeiras da faculdade e continuei estudando para construir algumas aplicações que exigiam um banco de dados. A minha maior experiência direta com SQLite foi no meu projeto que fiz de freelancer em que criei um sistema para um empresário que armazenava os dados de vendas e gastos de cada dia e ao final do mês exibia o gasto, ganho e lucro, além de possuir uma interface com o andamento do lucro ao longo dos meses, ou seja, ao final do ano (ou qualquer período maior que um mês) ele poderia saber se estava aumentando, perdendo ou mantendo os lucros da empresa dele
                     </pre>
                 </div>
 
                 <div class="main_docker menu_child">
                     <h1 class="others_h1">Docker</h1>
                     <pre class="others_pre">
-                        Texto sobre Docker
+                        Quando ouvi falar sobre uma ferramenta que criava clusters e facilitava a expansão de sistemas e aplicações achei instantaneamente interessante. Estudei a tecnologia e fiz um curso básico e prático sobre para adquirir um conhecimento e caso necessário aplicá-lo. Mesmo tendo me entusiasmado muito com a teoria por trás do Docker, não foi algo que pesquisei muito a fundo, mantendo meu conhecimento e prática básicos.
                     </pre>
                 </div>
 
                 <div class="main_office365 menu_child">
                     <h1 class="others_h1">Office 365</h1>
                     <pre class="others_pre">
-                        Texto sobre Office 365
-                    </pre>
-                </div>
-
-                <div class="main_flask menu_child">
-                    <h1 class="others_h1">Flask</h1>
-                    <pre class="others_pre">
-                        Texto sobre Flask
+                        Conheço o Office desde os trabalhos que fazia no colégio em que tinha que escrever artigos e textos para atividades ou trabalhos de aula, mas fui aprofundar meu conhecimento na plataforma quando entrei na faculdade e no meu emprego na Cloud2Go. Na faculdade vi a necessidade de uso de melhores ferramentas disponíveis no PowerPoint, Word e Excel (os clássicos) e as outras ferramentas do Office 365 que expandem muito as possibildiades como Sharepoint Online, Power BI, Teams e a nova plataforma de acesso da Microsoft o Microsoft Graph. Embora não seja uma área que me interesse tanto o uso de API's para customização da Microsoft, tenho que aplaudir o que ea empresa conseguiu atingir com o power BI. <br><br>As ferramentas que mais utilizo devido a minha familiaridade com Data Science são o Excel e o Power BI que são dois grandes monstros quando o quesito é análise de dados e até tratamento de dados. 
                     </pre>
                 </div>
             </div>
