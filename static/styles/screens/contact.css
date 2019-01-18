@@ -8,6 +8,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 30px;
     max-height: 30px;
+    min-width: 5px;
+    min-height: 5px;
 }
 
 .contact_styling {
@@ -23,4 +25,22 @@
 
 .reference_address{
     color: rgba(70, 70, 70, 0.815);
+}
+
+@media screen and (max-width: 700px){
+    .main_contact{
+        padding-top: 25px;
+    }
+    .contact_styling{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .main_contact{
+        padding-top: 10px;
+    }
+    .contact_styling{
+        font-size: 13px;
+    }
 }

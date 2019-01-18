@@ -2,8 +2,6 @@
     overflow: hidden;
     background-color: #333;
     width: 100%;
-    min-width: 270px;
-    min-height: 40px;
     max-height: 78px;
   }
 
@@ -12,8 +10,8 @@
     color: #f2f2f2;
     text-align: center;
     padding: 30px 35px;
-    min-width: 70px;
-    min-height: 35px;
+    min-width: 30px;
+    min-height: 15px;
     font-size: 14px;
     text-decoration: none;
     border-left: 0.75px solid #ddd;
@@ -30,30 +28,25 @@
     color: black;
   }
   
-  .topnav a.active {
+  .active {
     background-color: rgb(46, 129, 206);
     color: white;
     border: none;
     border-right: 0.75px solid #ddd;
   }
 
-  .topnav a.active:hover{
+  .active:hover{
     background-color: rgb(4, 171, 248);
     color: black;
   }
 
-  .topnav a.contact{
+  .topnav .contact{
     float: right;
     border: none;
   }
 
-  .topnav .icon {
+  .topnav a.icon{
     display: none;
-    font-size: 1.2em;
-    border: none;
-    margin: 0;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
   }
 
   @media screen and (max-width: 917px) {
@@ -64,8 +57,10 @@
     .topnav a.icon {
       float: right;
       display: block;
+      border: none;
     }
-    .topnav.responsive {
+
+    .responsive {
         position: relative;
         height: auto;
         max-height: none;
@@ -73,9 +68,11 @@
 
     .topnav.responsive a.icon {
       position: absolute;
-      right: -27px;
+      right: 0;
       top: 0;
-      padding-left: 45px;
+      margin-right: 0 !important;
+      padding-left: 70px;
+      padding-right: 0 !important;
       border: none;
     }
 
@@ -93,5 +90,41 @@
 
     .topnav.responsive a.icon{
         border: none;
+    }
+  }
+
+  @media screen and (max-width: 700px){
+    .topnav a {
+      padding: 20px 30px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      font-size: 11px;
+    }
+
+    .topnav.responsive a.icon {
+      padding-left: 30px;
+    }
+
+    .topnav a.double {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    .topnav a {
+      padding: 15px 20px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      font-size: 9px;
+    }
+
+    .topnav.responsive a.icon {
+      padding-left: 40px;
+    }
+
+    .topnav a.double {
+      padding-top: 7px;
+      padding-bottom: 7px;
     }
   }

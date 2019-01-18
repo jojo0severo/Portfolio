@@ -25,13 +25,16 @@ function open_nav(nav, caller) {
     let window_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
     // Measure for different screen size
-    if (window_width <= 600) {
-        document.getElementById("main_knowledges").style.marginLeft = "160px";
-        document.getElementById(nav).style.width = "160px";
-    }
-    else {
+    if (window_width > 700) {
         document.querySelector(".main_knowledges").style.marginLeft = "260px";
         document.getElementById(nav).style.width = "260px";
+    }
+    else if(window_width <= 500){
+        document.getElementById(nav).style.width = "160px";
+    }
+    else if (window_width <= 700){
+        document.querySelector(".main_knowledges").style.marginLeft = "160px";
+        document.getElementById(nav).style.width = "160px";
     }
 
     // Close the older navbar if another was openned
@@ -131,7 +134,7 @@ function sticky_func() {
                 sticky_button.classList.remove("sticky_bottom");
 
                 // Margin added to keep the element in the desired position
-                current_navitem.style.marginTop = '170px'
+                current_navitem.style.marginTop = '153px'
             }
 
             // if the page bottom will overlap the sticky button

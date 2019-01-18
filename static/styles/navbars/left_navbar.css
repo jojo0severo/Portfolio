@@ -52,6 +52,14 @@
     }
 
     .sidenav a {
-        font-size: 14px;
+        font-size: 13px;
+        padding-left: 20px;
+    }
+
+    .knowledges_nav_pre{
+      margin-top: 5px;
+    }
+    .sidenav .closebtn {
+      right: 10px;
     }
   }
