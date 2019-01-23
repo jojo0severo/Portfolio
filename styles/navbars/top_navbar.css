@@ -28,15 +28,15 @@
     color: black;
   }
   
-  .active {
+  .topnav .active {
     background-color: rgb(46, 129, 206);
     color: white;
     border: none;
     border-right: 0.75px solid #ddd;
   }
 
-  .active:hover{
-    background-color: rgb(4, 171, 248);
+  .topnav .active:hover{
+    background-color: #cbd476;;
     color: black;
   }
 
