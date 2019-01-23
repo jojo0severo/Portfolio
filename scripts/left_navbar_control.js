@@ -132,16 +132,16 @@ function sticky_func() {
             if (window.pageYOffset > sticky) {
                 sticky_button.classList.add("sticky_top");
                 sticky_button.classList.remove("sticky_bottom");
-                console.log(sticky_button.style.padding)
+
                 // Margin added to keep the element in the desired position
-                if (sticky_button.style.padding == '27px'){
+                if (window.getComputedStyle(sticky_button).padding == '27px'){
                     current_navitem.style.marginTop = '153px';
                 }
 
-                else if (sticky_button.style.padding == '20px'){
+                else if (window.getComputedStyle(sticky_button).padding == '20px'){
                     current_navitem.style.marginTop = '146px';
                 }
-                else if (sticky_button.style.padding == '15px'){
+                else if (window.getComputedStyle(sticky_button).padding == '15px'){
                     current_navitem.style.marginTop = '141px';
                 }
             }
