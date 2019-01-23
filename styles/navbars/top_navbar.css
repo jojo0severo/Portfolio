@@ -31,12 +31,12 @@
   .topnav .active {
     background-color: rgb(46, 129, 206);
     color: white;
-    border: none;
-    border-right: 0.75px solid #ddd;
+    border: none !important;
+    border-right: 0.75px solid #ddd !important;
   }
 
   .topnav .active:hover{
-    background-color: #cbd476;;
+    background-color: #cbd476 !important;
     color: black;
   }
 
