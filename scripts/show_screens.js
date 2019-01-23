@@ -41,4 +41,6 @@ function show(selected_screen_id, is_loading) {
     if (selected_screen){
         selected_screen.style.display = 'block';
     }
+    
+    navBarFunction()
 }
