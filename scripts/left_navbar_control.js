@@ -132,17 +132,17 @@ function sticky_func() {
             if (window.pageYOffset > sticky) {
                 sticky_button.classList.add("sticky_top");
                 sticky_button.classList.remove("sticky_bottom");
-
+                console.log(sticky_button.style.padding)
                 // Margin added to keep the element in the desired position
                 if (sticky_button.style.padding == '27px'){
-                    current_navitem.style.marginTop = '153px'
+                    current_navitem.style.marginTop = '153px';
                 }
 
                 else if (sticky_button.style.padding == '20px'){
-                    current_navitem.style.marginTop = '146px'
+                    current_navitem.style.marginTop = '146px';
                 }
                 else if (sticky_button.style.padding == '15px'){
-                    current_navitem.style.marginTop = '141px'
+                    current_navitem.style.marginTop = '141px';
                 }
             }
 
@@ -150,14 +150,14 @@ function sticky_func() {
             else if (window.pageYOffset + window.innerHeight < sticky + sticky_button.offsetHeight) {
                 sticky_button.classList.add("sticky_bottom");
                 sticky_button.classList.remove("sticky_top");
-                current_navitem.style.marginTop = '0px'
+                current_navitem.style.marginTop = '0px';
             }
 
             // if none of the above cases happen
             else {
-                current_navitem.style.marginTop = '0px'
                 sticky_button.classList.remove("sticky_bottom");
                 sticky_button.classList.remove("sticky_top");
+                current_navitem.style.marginTop = '0px';
             }
         }
     }
