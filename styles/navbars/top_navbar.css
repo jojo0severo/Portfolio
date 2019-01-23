@@ -7,7 +7,7 @@
 
   .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 30px 35px;
     min-width: 30px;
@@ -31,13 +31,15 @@
   .topnav .active {
     background-color: rgb(46, 129, 206);
     color: white;
-    border: none !important;
-    border-right: 0.75px solid #ddd !important;
+    border-right: 0.75px solid #ddd;
+    border-left: 0.75px solid rgb(46, 129, 206);
   }
 
-  .topnav .active:hover{
-    background-color: #cbd476 !important;
+  .topnav .active:hover {
+    background-color: #cbd476;
     color: black;
+    border-right: 0.75px solid #cbd476;
+    border-left: 0.75px solid #cbd476;
   }
 
   .topnav .contact{
