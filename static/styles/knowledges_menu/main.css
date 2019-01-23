@@ -32,3 +32,17 @@
     bottom: 0;
     left: 0px;
   }
+
+  @media screen and (max-width: 700px){
+    .sticky{
+      padding: 20px;
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    .sticky{
+      padding: 15px;
+      font-size: 11px;
+    }
+  }

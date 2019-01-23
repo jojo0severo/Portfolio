@@ -134,7 +134,16 @@ function sticky_func() {
                 sticky_button.classList.remove("sticky_bottom");
 
                 // Margin added to keep the element in the desired position
-                current_navitem.style.marginTop = '153px'
+                if (sticky_button.style.padding == '27px'){
+                    current_navitem.style.marginTop = '153px'
+                }
+
+                else if (sticky_button.style.padding == '20px'){
+                    current_navitem.style.marginTop = '146px'
+                }
+                else if (sticky_button.style.padding == '15px'){
+                    current_navitem.style.marginTop = '141px'
+                }
             }
 
             // if the page bottom will overlap the sticky button
