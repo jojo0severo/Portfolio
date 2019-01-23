@@ -139,10 +139,10 @@ function sticky_func() {
                 }
 
                 else if (window.getComputedStyle(sticky_button).padding == '20px'){
-                    current_navitem.style.marginTop = '146px';
+                    current_navitem.style.marginTop = '133px';
                 }
                 else if (window.getComputedStyle(sticky_button).padding == '15px'){
-                    current_navitem.style.marginTop = '141px';
+                    current_navitem.style.marginTop = '119px';
                 }
             }
 
