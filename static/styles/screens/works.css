@@ -1,0 +1,14 @@
+.main_works {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+}
+
+.side_by_side{
+    /* display: table-column; */
+}
+
+#wrap_interaction{
+    /* display: inline-table; */
+}

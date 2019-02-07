@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
     <link rel='shortcut icon' type='image/icon' href="{{ url_for('static',filename='images/site/favicon.ico') }}" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/screens/experiences.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/screens/courses_education.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/screens/knowledges.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/screens/contact.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/screens/home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/screens/works.css') }}">
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/navbars/top_navbar.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/navbars/left_navbar.css') }}">
@@ -260,7 +262,7 @@
                     <pre>
                         O projeto Simple IA foi desenvolvido como passa-tempo para empregar alguns conhecimentos de inteligência artificial e, ao mesmo tempo, ser algo divertido de utilizar e brincar. O funcionamento dele é bem simples, o Mario e a Peach ficam localizados em duas posições diferentes no mapa e o mario deve procurar por ela. O que torna o projeto em uma inteligência artificial é o fato de que ele toma a decisão de se mover para a direção da Peach de forma autônoma, ou seja, a partir da localização da Peach, o Mario traça o seu próprio trajeto.
                     </pre>
-                    <div style="margin-left: 50px;">
+                    <div id="works_video">
                         <video autoplay="autoplay" loop="loop" width="426" style="overflow: hidden;">
                             <source src="{{ url_for('static', filename='videos/mario_peach.mp4') }}" type="video/mp4" />
                         </video>
@@ -268,26 +270,38 @@
 
 
                     <pre class="works_pre">
-                            Natural Language Processing - <a class="reference_address" href="https://github.com/jojo0severo/SimpleIA" target="_blank" >Repositório</a>
+                        Natural Language Processing - <a class="reference_address" href="https://github.com/jojo0severo/SimpleIA" target="_blank" >Repositório</a>
                     </pre>
                     <pre>
-                        O processamento da linguagem natural é um campo muito interessante e que traz possibilidades inimagináveis de construção de aplicações, seja falar para sua geladeira que quer água até explicar o código que se quer fazer e o computador gerar algo extremamente otimizado e dentro dos parâmetros requisitados. Esse projeto foi desenvolvido como estudo para ter um aprofundamento prático nessa área e não é o modelo mais desenvolvido e inteligente do mundo, mas é capaz de fazer uma boa análise. O projeto foi construído utilizando uma API do Twitter para obtenção de frases (em inglês) e determinar se a frase é positiva ou negativa.
+                        O processamento da linguagem natural é um campo muito interessante e que traz possibilidades inimagináveis de construção de aplicações, seja falar para sua geladeira que quer água até explicar o código que se quer fazer e o computador gerar algo extremamente otimizado e dentro dos parâmetros requisitados. Esse projeto foi desenvolvido como estudo para ter um aprofundamento prático nessa área e não é o modelo mais desenvolvido e inteligente do mundo, mas é capaz de fazer uma boa análise. O projeto foi construído utilizando uma API do Twitter para obtenção de frases (em inglês) e determinar se a frase é positiva ou negativa. Além da aplicação contruída utilizando o twitter como fonte de dados, foi feito um mini projeto para determinar se frases, digitadas em tempo real quase, são positivas ou negativas.
                     </pre>
-                    <div style="margin-left: 50px;">
-                        <video autoplay="autoplay" loop="loop" width="426" style="overflow: hidden;">
-                            <source src="{{ url_for('static', filename='videos/mario_peach.mp4') }}" type="video/mp4" />
-                        </video>
+                    <div id="wrap_interaction" style="background-color: powderblue">
+                        <div id="input_wrap" class="side_by_side" style="background-color: orange">
+                            <input id="phrase_to_analyse" type="text" name="FirstName" placeholder="Frase em inglês">
+                            <br>
+                            <button id="send_phrase_to_analysis" onclick="" style="cursor: pointer;">CLICA AQUI</button>
+                            <p id="sentiment">Resultado</p>
+                        </div>
+                        <div class="side_by_side" style="background-color: red">
+                            <video autoplay="autoplay" loop="loop" width="848" style="overflow: hidden;">
+                                <source src="{{ url_for('static', filename='videos/analyser.mp4') }}" type="video/mp4" />
+                            </video>
+                        </div>
                     </div>
-                    <pre class="works_pre">
-                                Simple IA - <a class="reference_address" href="https://github.com/jojo0severo/SimpleIA" target="_blank" >Repositório</a>
-                            </pre>
-                    <pre>
-                                O projeto Simple IA foi desenvolvido como passa-tempo para empregar alguns conhecimentos de inteligência artificial e, ao mesmo tempo, ser algo divertido de utilizar e brincar. O funcionamento dele é bem simples, o Mario e a Peach ficam localizados em duas posições diferentes no mapa e o mario deve procurar por ela. O que torna o projeto em uma inteligência artificial é o fato de que ele toma a decisão de se mover para a direção da Peach de forma autônoma, ou seja, a partir da localização da Peach, o Mario traça o seu próprio trajeto.
-                            </pre>
-                    <div style="margin-left: 50px;">
-                        <video autoplay="autoplay" loop="loop" width="426" style="overflow: hidden;">
-                            <source src="{{ url_for('static', filename='videos/mario_peach.mp4') }}" type="video/mp4" />
-                        </video>
+
+                    <div style="background-color: rgb(121, 0, 241);">
+                        <pre class="works_pre">
+                            Crawler - <a class="reference_address" href="https://github.com/jojo0severo/SimpleIA" target="_blank" >Repositório</a>
+                        </pre>
+                        <pre>
+                            Com a crescente demanda por sites, publicidade, sistemas web, etc. O que não pode faltar são os testes para garantir a funcionalidade e segurança dos sites para que os usuários não sejam supreendidos negativamente e precisem parar de navegar pelo site da empresa por causa de bug's e erros que poderiam (vulgo deveriam) ter sido prevenidos e corrigidos anteriormente. Pensando nesse gap que há comecei a estudar formas de testar (e fazer brincadeiras) as funcionalidade do Selenium com o módulo web driver para navegar páginas na internet. Descobri um verdadeiro mundo de possibilidades de teste e automações que poderiam ser feitas construindo robôs para download de conteúdos programados e que exigiam repetições, pensando nessas automações que o projeto surgiu.
+                        </pre>
+
+                        <div>
+                            <!-- <video autoplay="autoplay" loop="loop" width="848" style="overflow: hidden;">
+                            <source src="{{ url_for('static', filename='videos/analyser.mp4') }}" type="video/mp4" />
+                        </video> -->
+                        </div>
                     </div>
                 </div>
             </div>
