@@ -28,9 +28,12 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/knowledges_menu/main.css') }}">
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="{{ url_for('static', filename='scripts/show_screens.js') }}"></script>
     <script src="{{ url_for('static', filename='scripts/top_navbar_control.js') }}"></script>
     <script src="{{ url_for('static', filename='scripts/left_navbar_control.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/nlp_phrase.js') }}"></script>
 
     <title>Portfolio João Severo</title>
 </head>
@@ -250,6 +253,7 @@
 
             <div class="child" id="works">
                 <div class="main_works">
+
                     <pre class="works_pre">
                         Simple IA - <a class="reference_address" href="https://github.com/jojo0severo/SimpleIA" target="_blank" >Repositório</a>
                     </pre>
@@ -261,6 +265,8 @@
                             <source src="{{ url_for('static', filename='videos/mario_peach.mp4') }}" type="video/mp4" />
                         </video>
                     </div>
+
+
                     <pre class="works_pre">
                             Natural Language Processing - <a class="reference_address" href="https://github.com/jojo0severo/SimpleIA" target="_blank" >Repositório</a>
                     </pre>
