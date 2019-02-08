@@ -103,6 +103,10 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# PyCharm files and folders
-.idea/
+# PyCharm
+*.iml
 *.xml
+.idea/
+
+# MyCode
+encryptor.py
