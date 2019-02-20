@@ -5,9 +5,9 @@ $(document).ready(function () {
             phrase: $('#phrase_to_analyse').val()
         }
         $.ajax({
-            url: "https://portfolio-joao-severo.netlify.com/_analyse_phrase",
+            url: "https://portfoliojoao.herokuapp.com/_analyse_phrase",
             type: "post",
-            contentType: "application/x-www-form-urlencoded",
+            contentType: "application/json",
             context: document.body,
             success: function (data) {
                 console.log(data);
