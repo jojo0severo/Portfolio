@@ -5,7 +5,7 @@ $(document).ready(function () {
             phrase: $('#phrase_to_analyse').val()
         }
         $.ajax({
-            url: "http://594cdce4.ngrok.io/_analyse_phrase",
+            url: "https://portfolio-joao-severo.netlify.com/_analyse_phrase",
             type: "post",
             dataType: "json",
             contentType: "application/json",
