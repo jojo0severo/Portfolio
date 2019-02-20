@@ -30,8 +30,8 @@ def stuff():
             sentiment = 'Frase negativa.'
 
         return jsonify(sentiment=sentiment)
-    except:
-        return jsonify(response='No data were given')
+    except Exception as e:
+        return jsonify(response=e)
 
 
 @app.route('/', methods=['GET'])
