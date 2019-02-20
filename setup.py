@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route('/_analyse_phrase', methods=['POST'])
 def stuff():
-    data = request.get_json()
-    print(data)
+    data = request.get_json(force=True)
+    
     sentiment = 'Easter egg encontrado. Outros 3 estão presentes no site.'
     if data['phrase'].lower()[:6] in ['te amo', 'te amo!', 'te amo.', 't amo', 'love u',
                                       'love you']:

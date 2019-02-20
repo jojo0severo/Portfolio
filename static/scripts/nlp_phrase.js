@@ -7,8 +7,7 @@ $(document).ready(function () {
         $.ajax({
             url: "https://portfolio-joao-severo.netlify.com/_analyse_phrase",
             type: "post",
-            dataType: "json",
-            contentType: "application/json",
+            contentType: "application/x-www-form-urlencoded",
             context: document.body,
             success: function (data) {
                 console.log(data);
