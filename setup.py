@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
+
 app = Flask(__name__)
 
 
@@ -8,16 +9,17 @@ app = Flask(__name__)
 def stuff():
     try:
         data = request.get_json()
-        
+
         sentiment = 'Easter egg encontrado. Outros 3 estão presentes no site.'
-        if data['phrase'].lower()[:6] in ['te amo', 'te amo!', 'te amo.', 't amo', 'love u',
-                                          'love you']:
+        if data['phrase'].lower()[:12] in ['te amo jojo', 'te amo, jojo!', 'te amo. jojo',
+                                           't amo jojo', 'love u jojo', 'love you, jojo']:
             return jsonify(sentiment=sentiment)
 
         score = analyser.polarity_scores(data['phrase'])
 
         if score['neu'] == 1.0:
-            sentiment = 'Por favor digite uma frase em inglês. Caso esteja em inglês verifique a ortografia.'
+            sentiment = 'Por favor digite uma frase em inglês. Caso esteja em inglês verifique a ' \
+                        'ortografia.'
             return jsonify(sentiment=sentiment)
 
         compound = score['compound']
@@ -31,7 +33,7 @@ def stuff():
 
         return jsonify(sentiment=sentiment)
     except Exception as e:
-        return jsonify(response=e)
+        return jsonify(response=repr(e))
 
 
 @app.route('/', methods=['GET'])
@@ -41,4 +43,4 @@ def main():
 
 if __name__ == '__main__':
     analyser = SentimentIntensityAnalyzer()
-    app.run(debug=False)
+    app.run(debug=True)
