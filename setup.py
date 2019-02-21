@@ -17,12 +17,6 @@ def stuff():
             return jsonify(sentiment=sentiment)
 
         score = analyser.polarity_scores(data['phrase'])
-
-        if score['neu'] == 1.0:
-            sentiment = 'Por favor digite uma frase em inglês. Caso esteja em inglês verifique a ' \
-                        'ortografia.'
-            return jsonify(sentiment=sentiment)
-
         compound = score['compound']
 
         if compound >= 0.05:
