@@ -5,7 +5,7 @@ $(document).ready(function () {
             phrase: $('#phrase_to_analyse').val()
         }
         $.ajax({
-            url: "https://portfoliojoao.herokuapp.com/_analyse_phrase",
+            url: "https://portfolio-joaosevero.herokuapp.com/_analyse_phrase",
             type: "post",
             contentType: "application/json",
             context: document.body,
