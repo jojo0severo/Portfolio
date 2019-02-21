@@ -10,11 +10,33 @@ $(document).ready(function () {
             contentType: "application/json",
             context: document.body,
             success: function (data) {
-                console.log(data);
-                $("#sentiment").text(data.sentiment);
+                simulate_adding_dots("Tentando adivinhar a frase", data.sentiment)
             },
             data: JSON.stringify(data)
         });
     });
 });
+
+
+
+
+var control = 0;
+function simulate_adding_dots(phrase, sentiment){
+    setTimeout(function(){
+        control ++;
+        if (control < 5){
+            document.getElementById("sentiment").innerText = phrase;
+            phrase = add_dot(phrase);
+            simulate_adding_dots(phrase, sentiment);
+        }
+        else if (control == 5){
+            document.getElementById("sentiment").innerText = sentiment
+        }
+    }, 1000);
+}
+
+
+function add_dot(phrase){
+    return phrase + '.'
+}
 
