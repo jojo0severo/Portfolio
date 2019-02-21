@@ -3,6 +3,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 
 app = Flask(__name__)
+analyser = SentimentIntensityAnalyzer()
 
 
 @app.route('/_analyse_phrase', methods=['POST'])
@@ -42,5 +43,4 @@ def main():
 
 
 if __name__ == '__main__':
-    analyser = SentimentIntensityAnalyzer()
     app.run()
