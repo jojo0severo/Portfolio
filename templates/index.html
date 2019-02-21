@@ -275,21 +275,21 @@
                     <pre>
                         O processamento da linguagem natural é um campo muito interessante e que traz possibilidades inimagináveis de construção de aplicações, seja falar para sua geladeira que quer água até explicar o código que se quer fazer e o computador gerar algo extremamente otimizado e dentro dos parâmetros requisitados. Esse projeto foi desenvolvido como estudo para ter um aprofundamento prático nessa área e não é o modelo mais desenvolvido e inteligente do mundo, mas é capaz de fazer uma boa análise. O projeto foi construído utilizando uma API do Twitter para obtenção de frases (em inglês) e determinar se a frase é positiva ou negativa. Além da aplicação contruída utilizando o twitter como fonte de dados, foi feito um mini projeto para determinar se frases, digitadas em tempo real quase, são positivas ou negativas.
                     </pre>
-                    <div id="wrap_interaction" style="background-color: powderblue">
+                    <div id="wrap_interaction">
                         <div id="input_wrap" class="side_by_side" style="background-color: orange">
                             <input id="phrase_to_analyse" type="text" name="FirstName" placeholder="Frase em inglês">
                             <br>
                             <button id="send_phrase_to_analysis" onclick="" style="cursor: pointer;">CLICA AQUI</button>
                             <p id="sentiment">Resultado</p>
                         </div>
-                        <div class="side_by_side" style="background-color: red">
+                        <div class="side_by_side">
                             <video autoplay="autoplay" loop="loop" width="848" style="overflow: hidden;">
                                 <source src="{{ url_for('static', filename='videos/analyser.mp4') }}" type="video/mp4" />
                             </video>
                         </div>
                     </div>
 
-                    <div style="background-color: rgb(121, 0, 241);">
+                    <div>
                         <pre class="works_pre">
                             Crawler - <a class="reference_address" href="https://github.com/jojo0severo/SimpleIA" target="_blank" >Repositório</a>
                         </pre>
